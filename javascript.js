@@ -9,23 +9,12 @@ document.getElementById("c").addEventListener("mouseout", (event) => {
 function transitionC() {
   let titre = document.getElementById("c");
   titre.style.color = "black";
-  titre.style.cursor = "pointer";
+
   titre.style.backgroundColor = "whitesmoke";
   titre.style.borderRadius = "25px";
   titre.style.transform = "rotate(25deg)";
   titre.style.transition = "2s";
 }
-
-/*function detransitionC(){
-
-
-    let titre=document.getElementById('c')
-    titre.style.color='whitesmoke'
-    titre.style.backgroundColor='black'
-    titre.style.transform="rotate(0deg)"
-
-
-} */
 
 ///////////////////////////////*y*///////////////////////////
 

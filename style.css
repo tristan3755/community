@@ -3,7 +3,9 @@
 }
 
 body {
+ 
   margin: 0;
+  
 }
 
 section {
@@ -14,11 +16,14 @@ section {
   height: 100vh;
   width: 100%;
   background-color: black;
+ 
 }
 
 article {
   display: flex;
   flex-direction: row;
+  cursor: none;
+  
 }
 
 article > * {
@@ -47,3 +52,5 @@ article > * {
   margin-bottom: 20px;
   margin-top: 15px;
 }
+
+
