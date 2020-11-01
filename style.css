@@ -3,12 +3,10 @@
 }
 
 body {
- 
   margin: 0;
-  
 }
 
-section {
+.sect1 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,35 +14,29 @@ section {
   height: 100vh;
   width: 100%;
   background-color: black;
- 
 }
 
 article {
   display: flex;
   flex-direction: row;
-  cursor:context-menu;
-  
+  cursor: context-menu;
 }
 
 article > * {
   color: whitesmoke;
   font-size: 80px;
-  font-family: 'Lobster', cursive;
+  font-family: "Lobster", cursive;
   margin: 5px;
-  
 }
 
-#c{
-
+#c {
   width: 45px;
   border-radius: 50%;
-  
-
 }
 
 .sousTitre h1 {
   font-size: 20px;
-  font-family: 'Lobster', cursive;
+  font-family: "Lobster", cursive;
   color: black;
 }
 
@@ -55,4 +47,9 @@ article > * {
   margin-top: 15px;
 }
 
+/**************************************section2*************************************************/
 
+.sect2 {
+  height: 100vh;
+  width: 100%;
+}

@@ -1,9 +1,14 @@
-document.getElementById("c").addEventListener("mouseover", (event) => {
+window.addEventListener("scroll", (event) => {
   transitionC();
-  separation()
-  apparition()
+  separation();
+  apparition();
 });
 
+document.getElementById("c").addEventListener("mouseover", (event) => {
+  transitionC();
+  separation();
+  apparition();
+});
 
 function transitionC() {
   let titre = document.getElementById("c");
@@ -14,21 +19,16 @@ function transitionC() {
   titre.style.transition = "2s";
 }
 
-function separation(){
-
-  let sep=document.querySelector(".separation")
-  sep.style.width="190px"
-  sep.style.transition="3s"
-
+function separation() {
+  let sep = document.querySelector(".separation");
+  sep.style.width = "190px";
+  sep.style.transition = "3s";
 }
 
-
-function apparition(){
-
-  let app=document.querySelector(".sousTitre h1")
-  app.style.color="whitesmoke"
-  app.style.transition="10s"
-
+function apparition() {
+  let app = document.querySelector(".sousTitre h1");
+  app.style.color = "whitesmoke";
+  app.style.transition = "10s";
 }
 
 ///////////////////////////////*y*///////////////////////////
@@ -55,6 +55,10 @@ function detransitionY() {
 /////////////////////////* o*//////////////////////////
 
 document.getElementById("o").addEventListener("mouseover", (event) => {
+  transitionO();
+});
+
+window.addEventListener("load", (event) => {
   transitionO();
 });
 
@@ -199,7 +203,4 @@ function detransitionT() {
   titre.style.transform = "rotate(0deg)";
 }
 
-
 /////////////////////////* separaition*//////////////////////////
-
-
