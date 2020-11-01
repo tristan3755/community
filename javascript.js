@@ -1,19 +1,34 @@
 document.getElementById("c").addEventListener("mouseover", (event) => {
   transitionC();
+  separation()
+  apparition()
 });
 
-document.getElementById("c").addEventListener("mouseout", (event) => {
-  detransitionC();
-});
 
 function transitionC() {
   let titre = document.getElementById("c");
   titre.style.color = "black";
-
   titre.style.backgroundColor = "whitesmoke";
-  titre.style.borderRadius = "25px";
+  titre.style.borderRadius = "50%";
   titre.style.transform = "rotate(25deg)";
   titre.style.transition = "2s";
+}
+
+function separation(){
+
+  let sep=document.querySelector(".separation")
+  sep.style.width="190px"
+  sep.style.transition="3s"
+
+}
+
+
+function apparition(){
+
+  let app=document.querySelector(".sousTitre h1")
+  app.style.color="whitesmoke"
+  app.style.transition="10s"
+
 }
 
 ///////////////////////////////*y*///////////////////////////
@@ -28,7 +43,7 @@ document.getElementById("y").addEventListener("mouseout", (event) => {
 
 function transitionY() {
   let titre = document.getElementById("y");
-  titre.style.transform = "rotate(-25deg)";
+  titre.style.transform = "rotate(-45deg)";
   titre.style.transition = "500ms";
 }
 
@@ -49,8 +64,8 @@ document.getElementById("o").addEventListener("mouseout", (event) => {
 
 function transitionO() {
   let titre = document.getElementById("o");
-  titre.style.transform = "rotate(-25deg)";
-  titre.style.transition = "500ms";
+  titre.style.transform = "rotate(-360deg)";
+  titre.style.transition = "1s";
 }
 
 function detransitionO() {
@@ -70,7 +85,7 @@ document.getElementById("m").addEventListener("mouseout", (event) => {
 
 function transitionM() {
   let titre = document.getElementById("m");
-  titre.style.transform = "rotate(-25deg)";
+  titre.style.transform = "rotate(-45deg)";
   titre.style.transition = "500ms";
 }
 
@@ -91,7 +106,7 @@ document.getElementById("mm").addEventListener("mouseout", (event) => {
 
 function transitionMM() {
   let titre = document.getElementById("mm");
-  titre.style.transform = "rotate(-25deg)";
+  titre.style.transform = "rotate(-45deg)";
   titre.style.transition = "500ms";
 }
 
@@ -112,7 +127,7 @@ document.getElementById("u").addEventListener("mouseout", (event) => {
 
 function transitionU() {
   let titre = document.getElementById("u");
-  titre.style.transform = "rotate(-25deg)";
+  titre.style.transform = "rotate(-45deg)";
   titre.style.transition = "500ms";
 }
 
@@ -133,7 +148,7 @@ document.getElementById("n").addEventListener("mouseout", (event) => {
 
 function transitionN() {
   let titre = document.getElementById("n");
-  titre.style.transform = "rotate(-25deg)";
+  titre.style.transform = "rotate(-45deg)";
   titre.style.transition = "500ms";
 }
 
@@ -154,7 +169,7 @@ document.getElementById("i").addEventListener("mouseout", (event) => {
 
 function transitionI() {
   let titre = document.getElementById("i");
-  titre.style.transform = "rotate(-25deg)";
+  titre.style.transform = "rotate(-45deg)";
   titre.style.transition = "500ms";
 }
 
@@ -175,7 +190,7 @@ document.getElementById("t").addEventListener("mouseout", (event) => {
 
 function transitionT() {
   let titre = document.getElementById("t");
-  titre.style.transform = "rotate(-25deg)";
+  titre.style.transform = "rotate(-45deg)";
   titre.style.transition = "500ms";
 }
 
@@ -183,3 +198,8 @@ function detransitionT() {
   let titre = document.getElementById("t");
   titre.style.transform = "rotate(0deg)";
 }
+
+
+/////////////////////////* separaition*//////////////////////////
+
+

@@ -22,7 +22,7 @@ section {
 article {
   display: flex;
   flex-direction: row;
-  cursor: none;
+  cursor:context-menu;
   
 }
 
@@ -37,6 +37,7 @@ article > * {
 #c{
 
   width: 45px;
+  border-radius: 50%;
   
 
 }
@@ -44,10 +45,11 @@ article > * {
 .sousTitre h1 {
   font-size: 20px;
   font-family: 'Lobster', cursive;
+  color: black;
 }
 
 .separation {
-  width: 190px;
+  width: 80px;
   border-top: 1px solid whitesmoke;
   margin-bottom: 20px;
   margin-top: 15px;
