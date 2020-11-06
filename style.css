@@ -6,6 +6,60 @@ body {
   margin: 0;
 }
 
+
+/**************** header******************/
+
+@keyframes apparition{
+
+  from{opacity: 0;}
+
+  to{opacity:100;}
+
+}
+
+
+
+header{
+  position: fixed;
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 80px;
+  background-color: black;
+  border-bottom: 1px solid whitesmoke;
+  z-index: 10;
+  animation: apparition 5s;
+}
+
+header h1{
+  color:white;
+}
+
+nav{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 80px;
+  width: 37vw;
+  
+}
+
+nav>*{
+
+  color: whitesmoke;
+  text-decoration: none;
+
+}
+
+nav>*:hover{
+  color:orangered;
+}
+
+
+/**************** sect1******************/
 .sect1 {
   display: flex;
   flex-direction: column;

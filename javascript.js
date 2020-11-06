@@ -1,4 +1,15 @@
 window.addEventListener("scroll", (event) => {
+  nav();
+});
+
+function nav() {
+  let nav = document.querySelector("header");
+ nav.style.display="flex"
+}
+
+/*************sect1 **************/
+
+window.addEventListener("scroll", (event) => {
   transitionC();
   separation();
   apparition();
@@ -8,6 +19,7 @@ document.getElementById("c").addEventListener("mouseover", (event) => {
   transitionC();
   separation();
   apparition();
+  nav();
 });
 
 function transitionC() {
