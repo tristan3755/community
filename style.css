@@ -6,20 +6,19 @@ body {
   margin: 0;
 }
 
-
 /**************** header******************/
 
-@keyframes apparition{
+@keyframes apparition {
+  from {
+    opacity: 0;
+  }
 
-  from{opacity: 0;}
-
-  to{opacity:100;}
-
+  to {
+    opacity: 100;
+  }
 }
 
-
-
-header{
+header {
   position: fixed;
   display: none;
   flex-direction: row;
@@ -33,31 +32,27 @@ header{
   animation: apparition 5s;
 }
 
-header h1{
-  color:white;
+header h1 {
+  color: white;
 }
 
-nav{
+nav {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
   height: 80px;
   width: 37vw;
-  
 }
 
-nav>*{
-
+nav > * {
   color: whitesmoke;
   text-decoration: none;
-
 }
 
-nav>*:hover{
-  color:orangered;
+nav > *:hover {
+  color: orangered;
 }
-
 
 /**************** sect1******************/
 .sect1 {
