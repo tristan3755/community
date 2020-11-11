@@ -65,22 +65,24 @@ nav > *:hover {
   background-color: black;
 }
 
-article {
+#community {
   display: flex;
   flex-direction: row;
   cursor: context-menu;
 }
 
-article > * {
-  color: whitesmoke;
-  font-size: 80px;
-  font-family: "Lobster", cursive;
-  margin: 5px;
+#community>*:hover{
+  opacity: 1;
+  color:white;
+  text-shadow: white 1px 5px 15px;
 }
 
-#c {
-  width: 45px;
-  border-radius: 50%;
+#community > * {
+  opacity: 0.5;
+  color: whitesmoke;
+  font-size: 80px;
+  font-family: "neon";
+  margin: 5px;
 }
 
 .sousTitre h1 {
@@ -95,6 +97,12 @@ article > * {
   margin-bottom: 20px;
   margin-top: 15px;
 }
+
+@font-face {
+  font-family: "neon";
+  src: url("./ressources/font/neon.TTF");
+      
+ }
 
 /**************************************section2*************************************************/
 
