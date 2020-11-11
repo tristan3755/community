@@ -71,11 +71,6 @@ nav > *:hover {
   cursor: context-menu;
 }
 
-#community>*:hover{
-  opacity: 1;
-  color:white;
-  text-shadow: white 1px 5px 15px;
-}
 
 #community > * {
   opacity: 0.5;

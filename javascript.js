@@ -30,6 +30,34 @@ function apparition() {
 
 ///////////////////////////////*C*///////////////////////////
 
+window.addEventListener("load", (event) => {
+
+  setInterval(switchOnC,500)
+ let off= setInterval(switchOffC,700)
+ setTimeout(()=>{
+  clearInterval(off)
+ },4000)
+  
+});
+
+
+function switchOnC(){
+
+  let o=document.getElementById("c")
+  o.style.opacity="1"
+  o.style.color="white"
+  o.style.textShadow="white 1px 5px 15px"
+  
+}
+
+function switchOffC(){
+
+  let o=document.getElementById("c")
+  o.style.opacity="0.5"
+  o.style.color="whitesmoke"
+  o.style.textShadow="none"
+ 
+  }
 
 
 /////////////////////////* o*//////////////////////////
@@ -39,13 +67,12 @@ function apparition() {
 window.addEventListener("load", (event) => {
 
   setInterval(switchOn,300)
-  setInterval(switchOff,500)
-  setTimeout(stop,1500)
-  
+ let off= setInterval(switchOff,500)
+ setTimeout(()=>{
+  clearInterval(off)
+ },1500)
   
 });
-
-
 
 
 function switchOn(){
@@ -66,89 +93,227 @@ function switchOff(){
  
   }
 
-function stop(){
-
-  
-  clearInterval(switchOff,switchOn)
-
-}
  
 
 
 /////////////////////////* m*//////////////////////////
 
-document.getElementById("m").addEventListener("mouseover", (event) => {
+window.addEventListener("load", (event) => {
+
+  setInterval(switchOnM,550)
+ let off= setInterval(switchOffM,700)
+ setTimeout(()=>{
+  clearInterval(off)
+ },3000)
   
 });
 
-document.getElementById("m").addEventListener("mouseout", (event) => {
 
-});
+function switchOnM(){
 
+  let o=document.getElementById("m")
+  o.style.opacity="1"
+  o.style.color="white"
+  o.style.textShadow="white 1px 5px 15px"
+  
+}
+
+function switchOffM(){
+
+  let o=document.getElementById("m")
+  o.style.opacity="0.5"
+  o.style.color="whitesmoke"
+  o.style.textShadow="none"
+ 
+  }
 
 /////////////////////////* mm*//////////////////////////
 
-document.getElementById("mm").addEventListener("mouseover", (event) => {
+window.addEventListener("load", (event) => {
+
+  setInterval(switchOnMM,600)
+ let off= setInterval(switchOffMM,750)
+ setTimeout(()=>{
+  clearInterval(off)
+ },4000)
   
 });
 
-document.getElementById("mm").addEventListener("mouseout", (event) => {
- 
-});
 
+function switchOnMM(){
+
+  let o=document.getElementById("mm")
+  o.style.opacity="1"
+  o.style.color="white"
+  o.style.textShadow="white 1px 5px 15px"
+  
+}
+
+function switchOffMM(){
+
+  let o=document.getElementById("mm")
+  o.style.opacity="0.5"
+  o.style.color="whitesmoke"
+  o.style.textShadow="none"
+ 
+  }
 
 /////////////////////////* u*//////////////////////////
 
-document.getElementById("u").addEventListener("mouseover", (event) => {
- 
+window.addEventListener("load", (event) => {
+
+  setInterval(switchOnU,590)
+ let off= setInterval(switchOffU,700)
+ setTimeout(()=>{
+  clearInterval(off)
+ },4000)
+  
 });
 
-document.getElementById("u").addEventListener("mouseout", (event) => {
+
+function switchOnU(){
+
+  let o=document.getElementById("u")
+  o.style.opacity="1"
+  o.style.color="white"
+  o.style.textShadow="white 1px 5px 15px"
+  
+}
+
+function switchOffU(){
+
+  let o=document.getElementById("u")
+  o.style.opacity="0.5"
+  o.style.color="whitesmoke"
+  o.style.textShadow="none"
  
-});
+  }
 
 
 /////////////////////////* n*//////////////////////////
 
-document.getElementById("n").addEventListener("mouseover", (event) => {
- 
-});
+window.addEventListener("load", (event) => {
 
-document.getElementById("n").addEventListener("mouseout", (event) => {
+  setInterval(switchOnN,620)
+ let off= setInterval(switchOffN,780)
+ setTimeout(()=>{
+  clearInterval(off)
+ },5000)
   
 });
 
+
+function switchOnN(){
+
+  let o=document.getElementById("n")
+  o.style.opacity="1"
+  o.style.color="white"
+  o.style.textShadow="white 1px 5px 15px"
+  
+}
+
+function switchOffN(){
+
+  let o=document.getElementById("n")
+  o.style.opacity="0.5"
+  o.style.color="whitesmoke"
+  o.style.textShadow="none"
+ 
+  }
 
 /////////////////////////* i*//////////////////////////
 
-document.getElementById("i").addEventListener("mouseover", (event) => {
+window.addEventListener("load", (event) => {
+
+  setInterval(switchOnI,600)
+ let off= setInterval(switchOffI,730)
+ setTimeout(()=>{
+  clearInterval(off)
+ },3500)
   
 });
 
-document.getElementById("i").addEventListener("mouseout", (event) => {
+
+function switchOnI(){
+
+  let o=document.getElementById("i")
+  o.style.opacity="1"
+  o.style.color="white"
+  o.style.textShadow="white 1px 5px 15px"
+  
+}
+
+function switchOffI(){
+
+  let o=document.getElementById("i")
+  o.style.opacity="0.5"
+  o.style.color="whitesmoke"
+  o.style.textShadow="none"
  
-});
+  }
 
 
 /////////////////////////* t*//////////////////////////
 
-document.getElementById("t").addEventListener("mouseover", (event) => {
+window.addEventListener("load", (event) => {
+
+  setInterval(switchOnT,620)
+ let off= setInterval(switchOffT,780)
+ setTimeout(()=>{
+  clearInterval(off)
+ },2000)
   
 });
 
-document.getElementById("t").addEventListener("mouseout", (event) => {
+
+function switchOnT(){
+
+  let o=document.getElementById("t")
+  o.style.opacity="1"
+  o.style.color="white"
+  o.style.textShadow="white 1px 5px 15px"
+  
+}
+
+function switchOffT(){
+
+  let o=document.getElementById("t")
+  o.style.opacity="0.5"
+  o.style.color="whitesmoke"
+  o.style.textShadow="none"
  
-});
+  }
 
 ///////////////////////////////*y*///////////////////////////
 
-document.getElementById("y").addEventListener("mouseover", (event) => {
+window.addEventListener("load", (event) => {
+
+  setInterval(switchOnY,1000)
+ let off= setInterval(switchOffY,1200)
+ setTimeout(()=>{
+  clearInterval(off)
+ },6000)
   
 });
 
-document.getElementById("y").addEventListener("mouseout", (event) => {
+
+function switchOnY(){
+
+  let o=document.getElementById("y")
+  o.style.opacity="1"
+  o.style.color="white"
+  o.style.textShadow="white 1px 5px 15px"
   
-});
+}
+
+function switchOffY(){
+
+  let o=document.getElementById("y")
+  o.style.opacity="0.5"
+  o.style.color="whitesmoke"
+  o.style.textShadow="none"
+ 
+  }
 
 
 
