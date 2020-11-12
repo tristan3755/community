@@ -34,6 +34,7 @@ header {
 
 header h1 {
   color: white;
+  font-family: "screaming";
 }
 
 nav {
@@ -82,7 +83,8 @@ nav > *:hover {
 
 .sousTitre h1 {
   font-size: 20px;
-  font-family: "Lobster", cursive;
+ font-family: 'Raleway', sans-serif; ;
+  letter-spacing: 4px;
   color: black;
 }
 
@@ -100,6 +102,18 @@ nav > *:hover {
       
  }
 
+
+ @font-face {
+  font-family: "art";
+  src: url("./ressources/font/art.ttf");
+      
+ }
+
+ @font-face {
+  font-family: "screaming";
+  src: url("./ressources/font/screaming.ttf");
+      
+ }
 /**************************************section2*************************************************/
 
 .sect2 {
