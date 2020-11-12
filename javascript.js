@@ -26,6 +26,7 @@ function apparition() {
   let app = document.querySelector(".sousTitre h1");
   app.style.color = "whitesmoke";
   app.style.transition = "10s";
+  app.style.letterSpacing="4px"
 }
 
 ///////////////////////////////*C*///////////////////////////
