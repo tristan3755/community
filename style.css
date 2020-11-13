@@ -48,11 +48,14 @@ nav {
 
 nav > * {
   color: whitesmoke;
+  opacity: 0.7;
   text-decoration: none;
 }
 
 nav > *:hover {
-  color: orangered;
+  color: white;
+  opacity: 1;
+  text-shadow: white 5px 1px 5px;
 }
 
 /**************** sect1******************/
@@ -83,7 +86,7 @@ nav > *:hover {
 .sousTitre h1 {
   font-size: 20px;
   font-family: "Raleway", sans-serif;
-
+  letter-spacing: 4px;
   color: black;
 }
 
@@ -160,14 +163,14 @@ footer {
 .Nancy h2 {
   color: white;
   font-family: "neonFuture";
-  text-shadow: white 1px 5px 5px;
+  text-shadow: white 5px 1px 5px;
   letter-spacing: 5px;
 }
 
 .metz h2 {
   color: white;
   font-family: "neonFuture";
-  text-shadow: white 1px 5px 5px;
+  text-shadow: white 5px 1px 5px;
   letter-spacing: 5px;
 }
 
@@ -182,6 +185,7 @@ footer {
 .Nancy p {
   color: white;
   font-family: "Raleway", sans-serif;
+  text-align: center;
 }
 
 .metz p {
@@ -197,5 +201,6 @@ footer {
 
 .fas{
   color: white;
-  font-size: 40px;
+  font-size: 20px;
+  margin-top: 20px;
 }
