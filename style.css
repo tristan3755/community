@@ -4,6 +4,7 @@
 
 body {
   margin: 0;
+  
 }
 
 /**************** header******************/
@@ -71,12 +72,25 @@ header {
 }
 
 #boutonMenu{
+  position: absolute;
   color: white;
   font-size: 20px;
   padding: 5px;
   margin-bottom: 15px;
+  z-index: 100;
   
 }
+
+#menuResponsive{
+  position: absolute;
+  display: none;
+  height: 100vh;
+  width: 100%;
+  background-color:#e9692c ;
+  z-index: 50;
+ 
+}
+
 
 @media (max-width: 1030px){
 
@@ -93,7 +107,6 @@ header {
     display: none;
   }
 }
-
 
 
 

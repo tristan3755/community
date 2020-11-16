@@ -7,6 +7,38 @@ function nav() {
   nav.style.display = "flex";
 }
 
+/**********navBarResponsive ******************/
+
+document.getElementById("boutonMenu").addEventListener("click",(event)=>{
+
+menu()
+
+})
+
+
+document.getElementById("croix").addEventListener("click",(event)=>{
+
+  menuOff()
+  
+  })
+  
+function menu(){
+
+  let menu=document.getElementById('menuResponsive')
+  menu.style.display=("flex")
+  
+}
+
+function menuOff(){
+
+  let menu=document.getElementById('menuResponsive')
+  menu.style.display=("none")
+  
+}
+
+
+/**********navBarResponsive ******************/
+
 /*************sect1 **************/
 
 window.addEventListener("scroll", (event) => {
