@@ -30,9 +30,7 @@ function menu(){
 
   let menu=document.getElementById('menuResponsive')
   menu.style.display="flex"
-  window.addEventListener('scroll',() => {
-    window.scrollTo(0,0);
-  }, true);  
+
   
 }
 
@@ -40,10 +38,6 @@ function menuOff(){
 
   let menu=document.getElementById('menuResponsive')
   menu.style.display=("none")
-  window.addEventListener('scroll',() => {
-    window.scroll();
-  },false);
-  
 }
 
 

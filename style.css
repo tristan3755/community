@@ -42,6 +42,7 @@ header {
 
 #responsive{
 
+  
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -81,7 +82,7 @@ header {
 }
 
 #menuResponsive{
-  position: absolute;
+  position: fixed;
   display: none;
   flex-direction: column;
   align-items: center;
