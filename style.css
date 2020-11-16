@@ -81,16 +81,50 @@ header {
   
 }
 
+#croix{
+  
+  color: white;
+  font-size: 20px;
+  padding: 5px;
+  margin-bottom: 15px;
+   
+}
+
 #menuResponsive{
   position: absolute;
   display: none;
+  flex-direction: column;
   height: 100vh;
   width: 100%;
   background-color:#e9692c ;
   z-index: 50;
+  animation: cover 2s;
  
 }
 
+@keyframes cover{
+  from{
+    width: 0%;
+  }
+
+  to{
+    width:100%
+  }
+}
+
+.navResponsive{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 80px;
+}
+
+.navResponsive div{
+  height: auto;
+  width: 180px;
+}
 
 @media (max-width: 1030px){
 

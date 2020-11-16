@@ -25,7 +25,7 @@ document.getElementById("croix").addEventListener("click",(event)=>{
 function menu(){
 
   let menu=document.getElementById('menuResponsive')
-  menu.style.display=("flex")
+  menu.style.display="flex"
   
 }
 
