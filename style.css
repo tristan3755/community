@@ -32,9 +32,9 @@ header {
   animation: apparition 5s;
 }
 
-header h1 {
-  color: white;
-  font-family: "screaming";
+#logo{
+  height: auto;
+  width: 180px;
 }
 
 #dekstop {
@@ -86,7 +86,7 @@ header h1 {
   #responsive{
     display: flex;
   }
-  header h1{
+  #logo{
     margin-left: 15px;
   }
   #dekstop{
