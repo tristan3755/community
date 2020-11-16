@@ -4,7 +4,7 @@
 
 body {
   margin: 0;
-  
+  scroll-behavior: smooth;
 }
 
 /**************** header******************/
@@ -33,55 +33,47 @@ header {
   animation: apparition 5s;
 }
 
-#logo{
+#logo {
   height: auto;
   width: 180px;
 }
 
 /*navbarResponsive*/
 
-#responsive{
-
-  
+#responsive {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 80px;
   width: 100px;
-  
 }
 
-#boutonMenu{
- 
+#boutonMenu {
   color: white;
   font-size: 30px;
   padding: 5px;
   margin-bottom: 15px;
-  
-  
 }
 
-#boutonMenu:hover{
-  color:#e9692c;
-  cursor:pointer;
+#boutonMenu:hover {
+  color: #e9692c;
+  cursor: pointer;
 }
 
-#croix:hover{
-  color:black;
-  cursor:pointer;
+#croix:hover {
+  color: black;
+  cursor: pointer;
 }
 
-#croix{
-  
+#croix {
   color: white;
   font-size: 30px;
   padding: 5px;
   margin-bottom: 15px;
-   
 }
 
-#menuResponsive{
+#menuResponsive {
   position: fixed;
   display: none;
   flex-direction: column;
@@ -89,13 +81,13 @@ header {
   justify-content: space-between;
   height: 100vh;
   width: 100%;
-  background-color:#e9692c ;
+  background-color: #e9692c;
   z-index: 50;
   animation: cover 2s;
- 
+  font-family: "rallway";
 }
 
-#mobile{
+#mobile {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -104,43 +96,51 @@ header {
   width: 100%;
 }
 
-#mobile>*{
-  color: white;
+#liens {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 70vh;
+  width: 100%;
+}
+
+#liens > * {
+  color: whitesmoke;
   text-decoration: none;
   margin-bottom: 5px;
   font-size: 20px;
   animation: lien 5s;
-  
+  font-family: "Raleway", sans-serif;
 }
 
-#mobile>*:hover{
+#liens > *:hover {
   color: black;
-  
 }
 
-@keyframes lien{
-  from{
+@keyframes lien {
+  from {
     opacity: 0;
   }
 
-  to{
+  to {
     opacity: 1;
   }
 }
 
-@keyframes cover{
-  from{
+@keyframes cover {
+  from {
     width: 0%;
     opacity: 0.7;
   }
 
-  to{
-    width:100%;
-    opacity:1;
+  to {
+    width: 100%;
+    opacity: 1;
   }
 }
 
-.navResponsive{
+.navResponsive {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -149,26 +149,24 @@ header {
   height: 80px;
 }
 
-.navResponsive div{
+.navResponsive div {
   height: 80px;
   width: 180px;
 }
 
-@media (max-width: 1030px){
-
-  header{
+@media (max-width: 1030px) {
+  header {
     justify-content: space-between;
   }
-  #responsive{
+
+  #responsive {
     display: flex;
   }
-  #logo{
+
+  #logo {
     margin-left: 15px;
   }
-  
 }
-
-
 
 /*navbarResponsive*/
 
@@ -226,35 +224,49 @@ header {
   font-family: "screaming";
   src: url("./ressources/font/screaming.ttf");
 }
+
 @font-face {
   font-family: "NeonFuture";
   src: url("./ressources/font/NeonF.ttf");
 }
 
-@media (max-width: 650px){
-#c,#o,#m,#mm,#u,#n,#i,#t,#y{
-
-  font-size: 50px;
-
-}
-
-.sousTitre h1{
-  font-size: 15px;
-  letter-spacing: 1px;
-}
-}
-
-@media (max-width: 400px){
-  #c,#o,#m,#mm,#u,#n,#i,#t,#y{
-  
-    font-size: 35px;
-  
+@media (max-width: 650px) {
+  #c,
+  #o,
+  #m,
+  #mm,
+  #u,
+  #n,
+  #i,
+  #t,
+  #y {
+    font-size: 50px;
   }
 
-  .sousTitre h1{
+  .sousTitre h1 {
+    font-size: 15px;
+    letter-spacing: 1px;
+  }
+}
+
+@media (max-width: 400px) {
+  #c,
+  #o,
+  #m,
+  #mm,
+  #u,
+  #n,
+  #i,
+  #t,
+  #y {
+    font-size: 35px;
+  }
+
+  .sousTitre h1 {
     font-size: 10px;
   }
-  }
+}
+
 /**************************************section2*************************************************/
 
 .sect2 {
@@ -309,6 +321,7 @@ footer {
   min-height: 170px;
   border-left: 1px whitesmoke solid;
 }
+
 .borderFin {
   min-height: 170px;
   border-left: 1px black solid;
@@ -336,6 +349,7 @@ footer {
   font-family: "Raleway", sans-serif;
   text-align: center;
 }
+
 .borderFooter {
   width: 80px;
   border-top: 1px solid whitesmoke;

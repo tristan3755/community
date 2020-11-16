@@ -9,37 +9,74 @@ function nav() {
 
 /**********navBarResponsive ******************/
 
-document.getElementById("boutonMenu").addEventListener("click",(event)=>{
+document.getElementById("boutonMenu").addEventListener("click", (event) => {
+  menu();
+});
 
-menu()
+document.getElementById("croix").addEventListener("click", (event) => {
+  menuOff();
+});
 
 
+function menu() {
+  let menu = document.getElementById("menuResponsive");
+  menu.style.display = "flex";
+}
 
-})
+
+function menuOff() {
+  let menu = document.getElementById("menuResponsive");
+  menu.style.display = "none";
+}
 
 
-document.getElementById("croix").addEventListener("click",(event)=>{
+let mesLiens = [
+  {
+    name: "Services",
+    lien: "",
+  },
 
-  menuOff()
-  
+  {
+    name: "A propos",
+    lien: "",
+  },
+
+  {
+    name: "Projects",
+    lien: "",
+  },
+
+  {
+    name: "Contact",
+    lien: "#foot",
+  },
+
+  {
+    name: "l'équipe",
+    lien: "",
+  },
+
+  {
+    name: "Formation",
+    lien: "",
+  },
+];
+
+for (i in mesLiens) {
+  let monMenu = document.createElement("a");
+  monMenu.href = mesLiens[i].lien;
+  monMenu.innerHTML = mesLiens[i].name;
+
+  monMenu.addEventListener('click',(event)=>{
+
+    let menu = document.getElementById("menuResponsive");
+    menu.style.display = "none";
+
+
   })
 
-
-  
-function menu(){
-
-  let menu=document.getElementById('menuResponsive')
-  menu.style.display="flex"
-
-  
+  document.getElementById("liens").appendChild(monMenu);
 }
-
-function menuOff(){
-
-  let menu=document.getElementById('menuResponsive')
-  menu.style.display=("none")
-}
-
 
 /**********navBarResponsive ******************/
 
@@ -60,7 +97,6 @@ function apparition() {
   let app = document.querySelector(".sousTitre h1");
   app.style.color = "whitesmoke";
   app.style.transition = "10s";
-  
 }
 
 ///////////////////////////////*C*///////////////////////////
