@@ -38,31 +38,11 @@ header {
   width: 180px;
 }
 
-#dekstop {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
-  height: 80px;
-  width: 37vw;
-}
-
-#dekstop  > * {
-  color: whitesmoke;
-  opacity: 0.7;
-  text-decoration: none;
-}
-
-#dekstop > *:hover {
-  color: white;
-  opacity: 1;
-  text-shadow: white 5px 1px 5px;
-}
-
 /*navbarResponsive*/
 
 #responsive{
-  display: none;
+
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -72,13 +52,23 @@ header {
 }
 
 #boutonMenu{
-  position: absolute;
+ 
   color: white;
-  font-size: 20px;
+  font-size: 30px;
   padding: 5px;
   margin-bottom: 15px;
-  z-index: 100;
   
+  
+}
+
+#boutonMenu:hover{
+  color:#e9692c;
+  cursor:pointer;
+}
+
+#croix:hover{
+  color:black;
+  cursor:pointer;
 }
 
 #croix{
@@ -174,9 +164,7 @@ header {
   #logo{
     margin-left: 15px;
   }
-  #dekstop{
-    display: none;
-  }
+  
 }
 
 
