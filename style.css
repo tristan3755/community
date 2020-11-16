@@ -37,7 +37,7 @@ header h1 {
   font-family: "screaming";
 }
 
-nav {
+#dekstop {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -46,17 +46,58 @@ nav {
   width: 37vw;
 }
 
-nav > * {
+#dekstop  > * {
   color: whitesmoke;
   opacity: 0.7;
   text-decoration: none;
 }
 
-nav > *:hover {
+#dekstop > *:hover {
   color: white;
   opacity: 1;
   text-shadow: white 5px 1px 5px;
 }
+
+/*navbarResponsive*/
+
+#responsive{
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  width: 100px;
+  
+}
+
+#boutonMenu{
+  color: white;
+  font-size: 20px;
+  padding: 5px;
+  margin-bottom: 15px;
+  
+}
+
+@media (max-width: 1030px){
+
+  header{
+    justify-content: space-between;
+  }
+  #responsive{
+    display: flex;
+  }
+  header h1{
+    margin-left: 15px;
+  }
+  #dekstop{
+    display: none;
+  }
+}
+
+
+
+
+/*navbarResponsive*/
 
 /**************** sect1******************/
 .sect1 {
@@ -116,6 +157,31 @@ nav > *:hover {
   font-family: "NeonFuture";
   src: url("./ressources/font/NeonF.ttf");
 }
+
+@media (max-width: 650px){
+#c,#o,#m,#mm,#u,#n,#i,#t,#y{
+
+  font-size: 50px;
+
+}
+
+.sousTitre h1{
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+}
+
+@media (max-width: 400px){
+  #c,#o,#m,#mm,#u,#n,#i,#t,#y{
+  
+    font-size: 35px;
+  
+  }
+
+  .sousTitre h1{
+    font-size: 10px;
+  }
+  }
 /**************************************section2*************************************************/
 
 .sect2 {
@@ -136,7 +202,7 @@ footer {
 }
 
 .borderFooter2 {
-  width: 70%;
+  width: 80%;
   border-top: 1px solid whitesmoke;
   margin: 30px;
 }
@@ -238,4 +304,3 @@ footer {
   color: white;
   opacity: 1;
 }
-
