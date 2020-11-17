@@ -230,6 +230,11 @@ header {
   src: url("./ressources/font/NeonF.ttf");
 }
 
+@font-face {
+  font-family: "bien";
+  src: url("./ressources/font/bien.otf");
+}
+
 @media (max-width: 650px) {
   #c,
   #o,
@@ -270,8 +275,63 @@ header {
 /**************************************section2*************************************************/
 
 .sect2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  width: 100%;
+  
+}
+
+#bienvenue{
+
+  position: relative;
+  font-size: 3em;
+  color: black;
+  font-family: "bien";
+  letter-spacing: 5px;
+  
+}
+
+#bienvenue:before{
+content:'';
+position:absolute;
+left: 120%;
+width: 120%;
+height: 100%;
+background:white;
+animation:text 10s linear forwards;
+
+}
+
+@keyframes text{
+
+
+  0%{
+    left:-20%;
+  }
+
+  50%{
+    left:120%;
+  }
+
+  100%{
+    left:120%;
+  }
+}
+
+/******************sect3******************/
+
+.sect3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
   width: 100%;
+  background-color: black;
+  
 }
 
 /**************************************footer*************************************************/
