@@ -294,7 +294,7 @@ header {
   letter-spacing: 5px;
   
 }
-
+/*
 #bienvenue:before{
 content:'';
 position:absolute;
@@ -321,7 +321,7 @@ animation:text 10s linear forwards;
     left:120%;
   }
 }
-
+*/
 /******************sect3******************/
 
 .sect3 {
@@ -339,8 +339,11 @@ animation:text 10s linear forwards;
 
    color: white;
    font-family: 'bien'; 
-   font-size: 30px;
+   font-size: 25px;
    letter-spacing: 10px;
+   margin-bottom: 50px;
+   margin-top: 50px;
+   text-align: center;
 
 }
 
@@ -369,9 +372,11 @@ animation:text 10s linear forwards;
     text-align: center;
     font-family: 'bien';
     color:#e9692c;
-    margin: 20px;
+    margin: 50px;
+  }
 
-
+  .imageDiv p{
+    margin: 5px;
   }
 
   .imgBox{
@@ -383,7 +388,7 @@ animation:text 10s linear forwards;
   }
 
   .imgBox:hover{
-    transform: translate(-60px,-60px);
+    cursor:pointer;
     
   }
 

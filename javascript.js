@@ -319,3 +319,81 @@ function switchOffY() {
 
 /*************************** sect3 ******************************/
 
+let equipe=[
+
+
+  {
+    nom:'Matthieu Simonin',
+    job:'Directeur d\'agence',
+    image:'./ressources/images/boss.jpg',
+  },
+
+  
+  {
+    nom:'Abdelah Boumaza',
+    job:'Formateur hygiène sécurité',
+    image:'./ressources/images/abdela.jpg',
+  },
+
+  
+  {
+    nom:'Céllia Mouzard',
+    job:'Chargée de communication',
+    image:'./ressources/images/cellia.jpg',
+  },
+
+  
+  {
+    nom:'Christophers Pestelard ',
+    job:' Commercial',
+    image:'./ressources/images/christophers.jpg',
+  },
+
+  {
+    nom:'Matthieu ',
+    job:' Formateur Anglais',
+    image:'./ressources/images/math.jpg',
+  },
+
+
+
+]
+
+
+for (i in equipe){
+
+  let imageDiv=document.createElement('div')
+  imageDiv.classList.add('imageDiv')
+
+  let imgBox=document.createElement('div')
+  imgBox.classList.add('imgBox')
+
+  let imagePerso=document.createElement('img')
+  imagePerso.src=equipe[i].image
+
+  imgBox.appendChild(imagePerso)
+  imageDiv.appendChild(imgBox)
+
+  let job=document.createElement('div')
+  job.classList.add('job')
+
+  imageDiv.appendChild(job)
+  
+  let jobText=document.createElement('p')
+  jobText.innerHTML=equipe[i].nom
+
+  job.appendChild(jobText)
+  
+  let jobText2=document.createElement('p')
+  jobText2.innerHTML=equipe[i].job
+
+  job.appendChild(jobText2)
+
+imgBox.addEventListener('click',(event)=>{
+
+imagePerso.style.transform='translate(-60px,-60px)'
+imagePerso.style.transition='2s ease-in-out'
+})  
+
+document.getElementById('gallery').appendChild(imageDiv)
+}
