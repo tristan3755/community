@@ -383,27 +383,28 @@ for (i in equipe) {
 
   let jobText2 = document.createElement('p')
   jobText2.innerHTML = equipe[i].job
+  jobText2.style.fontFamily = 'raleway'
 
   job.appendChild(jobText2)
 
   imgBox.addEventListener('click', (event) => {
 
     deplace()
-    
+
   })
 
-  function deplace(){
+  function deplace() {
     imagePerso.style.transform = 'translate(-60px,-60px)'
     imagePerso.style.transition = '2s ease-in-out'
   }
 
-  window.addEventListener('load',(event)=>{
+  window.addEventListener('load', (event) => {
 
-    setInterval(retour,10000)
+    setInterval(retour, 10000)
 
   })
 
-  function retour(){
+  function retour() {
 
     imagePerso.style.transform = 'translate(0px,0px)'
     imagePerso.style.transition = '2s ease-in-out'
