@@ -30,8 +30,7 @@ function menuOff() {
 }
 
 
-let mesLiens = [
-  {
+let mesLiens = [{
     name: "Services",
     lien: "",
   },
@@ -67,7 +66,7 @@ for (i in mesLiens) {
   monMenu.href = mesLiens[i].lien;
   monMenu.innerHTML = mesLiens[i].name;
 
-  monMenu.addEventListener('click',(event)=>{
+  monMenu.addEventListener('click', (event) => {
 
     let menu = document.getElementById("menuResponsive");
     menu.style.display = "none";
@@ -319,81 +318,97 @@ function switchOffY() {
 
 /*************************** sect3 ******************************/
 
-let equipe=[
+let equipe = [
 
 
   {
-    nom:'Matthieu Simonin',
-    job:'Directeur d\'agence',
-    image:'./ressources/images/boss.jpg',
+    nom: 'Matthieu Simonin',
+    job: 'Directeur d\'agence',
+    image: './ressources/images/boss.jpg',
   },
 
-  
-  {
-    nom:'Abdelah Boumaza',
-    job:'Formateur hygiène sécurité',
-    image:'./ressources/images/abdela.jpg',
-  },
-
-  
-  {
-    nom:'Céllia Mouzard',
-    job:'Chargée de communication',
-    image:'./ressources/images/cellia.jpg',
-  },
-
-  
-  {
-    nom:'Christophers Pestelard ',
-    job:' Commercial',
-    image:'./ressources/images/christophers.jpg',
-  },
 
   {
-    nom:'Matthieu ',
-    job:' Formateur Anglais',
-    image:'./ressources/images/math.jpg',
+    nom: 'Abdelah Boumaza',
+    job: 'Formateur hygiène sécurité',
+    image: './ressources/images/abdela.jpg',
   },
 
 
+  {
+    nom: 'Céllia Mouzard',
+    job: 'Chargée de communication',
+    image: './ressources/images/cellia.jpg',
+  },
+
+
+  {
+    nom: 'Christophers Pestelard ',
+    job: ' Commercial',
+    image: './ressources/images/christophers.jpg',
+  },
+
+  {
+    nom: 'Matthieu Zacharie',
+    job: ' Formateur Anglais',
+    image: './ressources/images/math.jpg',
+  },
 
 ]
 
 
-for (i in equipe){
+for (i in equipe) {
 
-  let imageDiv=document.createElement('div')
+  let imageDiv = document.createElement('div')
   imageDiv.classList.add('imageDiv')
 
-  let imgBox=document.createElement('div')
+  let imgBox = document.createElement('div')
   imgBox.classList.add('imgBox')
 
-  let imagePerso=document.createElement('img')
-  imagePerso.src=equipe[i].image
+  let imagePerso = document.createElement('img')
+  imagePerso.src = equipe[i].image
 
   imgBox.appendChild(imagePerso)
   imageDiv.appendChild(imgBox)
 
-  let job=document.createElement('div')
+  let job = document.createElement('div')
   job.classList.add('job')
 
   imageDiv.appendChild(job)
-  
-  let jobText=document.createElement('p')
-  jobText.innerHTML=equipe[i].nom
+
+  let jobText = document.createElement('p')
+  jobText.innerHTML = equipe[i].nom
 
   job.appendChild(jobText)
-  
-  let jobText2=document.createElement('p')
-  jobText2.innerHTML=equipe[i].job
+
+  let jobText2 = document.createElement('p')
+  jobText2.innerHTML = equipe[i].job
 
   job.appendChild(jobText2)
 
-imgBox.addEventListener('click',(event)=>{
+  imgBox.addEventListener('click', (event) => {
 
-imagePerso.style.transform='translate(-60px,-60px)'
-imagePerso.style.transition='2s ease-in-out'
-})  
+    deplace()
+    
+  })
 
-document.getElementById('gallery').appendChild(imageDiv)
+  function deplace(){
+    imagePerso.style.transform = 'translate(-60px,-60px)'
+    imagePerso.style.transition = '2s ease-in-out'
+  }
+
+  window.addEventListener('load',(event)=>{
+
+    setInterval(retour,10000)
+
+  })
+
+  function retour(){
+
+    imagePerso.style.transform = 'translate(0px,0px)'
+    imagePerso.style.transition = '2s ease-in-out'
+
+  }
+
+  document.getElementById('gallery').appendChild(imageDiv)
 }
