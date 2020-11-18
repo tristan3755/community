@@ -186,6 +186,7 @@ header {
   display: flex;
   flex-direction: row;
   cursor: context-menu;
+  
 }
 
 #community > * {
@@ -194,7 +195,10 @@ header {
   font-size: 80px;
   font-family: "neonFuture";
   margin: 5px;
+
+  
 }
+
 
 .sousTitre h1 {
   font-size: 20px;
@@ -247,6 +251,7 @@ header {
   #t,
   #y {
     font-size: 50px;
+    -webkit-box-reflect: below 6px white;
   }
 
   .sousTitre h1 {
@@ -291,34 +296,7 @@ header {
   font-family: "bien";
   letter-spacing: 5px;
 }
-/*
-#bienvenue:before{
-content:'';
-position:absolute;
-left: 120%;
-width: 120%;
-height: 100%;
-background:white;
-animation:text 10s linear forwards;
 
-}
-
-@keyframes text{
-
-
-  0%{
-    left:-20%;
-  }
-
-  50%{
-    left:120%;
-  }
-
-  100%{
-    left:120%;
-  }
-}
-*/
 /******************sect3******************/
 
 .sect3 {
