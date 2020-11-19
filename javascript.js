@@ -413,3 +413,76 @@ for (i in equipe) {
 
   document.getElementById('gallery').appendChild(imageDiv)
 }
+
+
+/*************************** catégorie ******************************/
+
+
+let mesServices=[
+
+  {
+    nom:'Graphisme',
+    image:'.ressources/images/7.png',
+    description:'Identité visuelle Logo Cartes de visite Flyers/ Brochures/ Affiches...',
+  },
+
+  {
+    nom:'Web',
+    image:'.ressources/images/6.png',
+    description:"Création site internet Vitrine & E-Commerce Community management  "
+  },
+
+  {
+    nom:'impression',
+    image:'.ressources/images/1.png',
+    description:'Impression de tous vos outils de communication'
+  },
+
+  {
+    nom:'Photo & vidéo',
+    image:'.ressources/images/5.png',
+    description:'Shooting produits Photos & Vidéos d\'entreprise'
+  },
+
+  {
+    nom:'Grands Formats',
+    image:'.ressources/images/2.png',
+    description:'Création d\'Enseigne Réalisation de Vitrines Signalétique'
+  },
+
+
+  {
+    nom:'Publicité',
+    image:'.ressources/images/3.png',
+    description:'Objets publicitaires Textiles Vitrophanie Covering voiture Affiches Bache'
+  },
+
+  {
+    nom:'Formation',
+    image:'.ressources/images/4.png',
+    description:'Objets publicitaires Textiles Vitrophanie Covering voiture Affiches Bache'
+  },
+
+]
+
+
+
+
+for (i in mesServices){
+
+let monBloc=document.createElement('div')
+monBloc.classList.add('bloc')
+monBloc.style.height='300px'
+monBloc.style.width='300px'
+monBloc.style.border='3px solid black'
+monBloc.style.margin='20px'
+
+
+
+
+
+
+
+document.getElementById('services').appendChild(monBloc)
+
+}
