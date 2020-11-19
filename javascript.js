@@ -463,7 +463,7 @@ let mesServices=[
     description:'Objets publicitaires Textiles Vitrophanie Covering voiture Affiches Bache'
   },
 
-],
+]
 
 
 
@@ -472,9 +472,9 @@ for (i in mesServices){
 
   let monBloc=document.createElement('div')
   monBloc.classList.add('bloc')
-  monBloc.style.height='400px'
+  monBloc.style.height='350px'
   monBloc.style.width='300px'
-  monBloc.style.border='3px solid black'
+
   monBloc.style.margin='20px'
   monBloc.style.display='flex'
   monBloc.style.flexDirection='column'
@@ -483,20 +483,44 @@ for (i in mesServices){
   document.getElementById('services').appendChild(monBloc)
   
   let monTitre=document.createElement('p')
-  monTitre.classList.add('titreServices')
   monTitre.innerHTML=mesServices[i].name
-  monTitre.style.fontSize='10px'
+  monTitre.style.fontSize='25px'
   monTitre.style.fontFamily='raleway'
-  
+
   monBloc.appendChild(monTitre)
+
+  let monCercle=document.createElement('div')
+  monCercle.classList.add('cercle')
+  monCercle.style.position="absolue"
+  monCercle.style.backgroundColor='#e9692c'
+  monCercle.style.borderRadius="50%"
+  monCercle.style.width="170px"
+  monCercle.style.height="170px"
+  monCercle.style.position="absolute"
+  monCercle.style.display="flex"
+  monCercle.style.flexDirection="column"
+  monCercle.style.alignItems="center"
+  monCercle.style.justifyContent="center"
+
+
+  monBloc.appendChild(monCercle)
+  
+  
   
   let monImage=document.createElement('img')
   monImage.src=mesServices[i].image
   monImage.style.height='150px'
   monImage.style.width='150px'
-  monImage.style.borderRadius='50%'
-  monImage.style.border='3px #e9692c solid'
+  monCercle.style.position="relative"
+ 
   
-  monBloc.appendChild(monImage)
-  
-  }
+  monCercle.appendChild(monImage)
+
+  let maDescription=document.createElement('p')
+  maDescription.innerHTML=mesServices[i].description
+  maDescription.style.fontFamily='raleway'
+  maDescription.style.textAlign='center'
+  maDescription.style.margin='20px'
+
+  monBloc.appendChild(maDescription)
+}
