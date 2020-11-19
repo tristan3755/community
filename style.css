@@ -251,7 +251,7 @@ header {
   #t,
   #y {
     font-size: 50px;
-    -webkit-box-reflect: below 6px white;
+    
   }
 
   .sousTitre h1 {
@@ -406,6 +406,97 @@ header {
   
 
 }
+/**************************************categories***********************/
+
+.imageService:hover{
+  animation:tournePas 4s linear infinite;
+  transition: 5s;
+}
+
+.cercle:hover{
+  animation:tourne 4s linear infinite;
+  
+}
+
+@keyframes tourne{
+
+  0%{
+    transform: rotate(0deg);
+  }
+
+  100%{
+    transform: rotate(360deg);
+  }
+
+}
+
+@keyframes tournePas{
+
+  0%{
+    transform: rotate(0deg);
+  }
+
+  100%{
+    transform: rotate(-360deg);
+  }
+
+}
+
+@media (max-width:800px){
+
+  .imageService{
+    animation:tournePas 4s linear infinite;
+    transition: 5s;
+  }
+  
+  .cercle{
+    animation:tourne 4s linear infinite;
+    
+  }
+
+}
+
+
+.cercle::before{
+  content: '';
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to top,transparent,rgba(233, 105, 44, 0.836));
+  background-size: 170px 170px;
+  background-repeat: no-repeat;
+  border-top-left-radius: 170px;
+  border-bottom-left-radius: 170px;
+}
+
+
+.cercle::after{
+  content: '';
+  position: absolute;
+  top:3px;
+  left: 48%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  background: #e9692c;
+  border-radius: 50%;
+  z-index: 5;
+  box-shadow: 0 0 10px #e9692c,
+   0 0 20px #e9692c,
+   0 0 30px #e9692c,
+   0 0 40px #e9692c,
+   0 0 50px #e9692c,
+   0 0 60px #e9692c,
+   0 0 70px #e9692c,
+   0 0 80px #e9692c,
+   0 0 90px #e9692c,
+   0 0 100px #e9692c;
+  
+}
+
+
 
 /**************************************footer*************************************************/
 

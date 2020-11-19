@@ -433,7 +433,7 @@ let mesServices=[
   },
 
   {
-    name:'impression',
+    name:'Impression',
     image:'./ressources/images/1.png',
     description:'Impression de tous vos outils de communication'
   },
@@ -474,7 +474,6 @@ for (i in mesServices){
   monBloc.classList.add('bloc')
   monBloc.style.height='350px'
   monBloc.style.width='300px'
-
   monBloc.style.margin='20px'
   monBloc.style.display='flex'
   monBloc.style.flexDirection='column'
@@ -491,27 +490,46 @@ for (i in mesServices){
 
   let monCercle=document.createElement('div')
   monCercle.classList.add('cercle')
-  monCercle.style.position="absolue"
-  monCercle.style.backgroundColor='#e9692c'
+  monCercle.style.position="relative"
   monCercle.style.borderRadius="50%"
   monCercle.style.width="170px"
   monCercle.style.height="170px"
-  monCercle.style.position="absolute"
   monCercle.style.display="flex"
   monCercle.style.flexDirection="column"
   monCercle.style.alignItems="center"
   monCercle.style.justifyContent="center"
+  
+  
 
+  
+
+  let monSpan=document.createElement('span')
+  monSpan.style.position="absolute"
+  monSpan.style.top="5px"
+  monSpan.style.left="5px"
+  monSpan.style.right="5px"
+  monSpan.style.bottom="5px"
+  monSpan.style.backgroundColor="white"
+  monSpan.style.borderRadius="50%"
+ 
+
+
+
+  monCercle.appendChild(monSpan)
 
   monBloc.appendChild(monCercle)
   
   
   
   let monImage=document.createElement('img')
+  monImage.classList.add('imageService')
   monImage.src=mesServices[i].image
   monImage.style.height='150px'
   monImage.style.width='150px'
-  monCercle.style.position="relative"
+  monImage.style.position="relative"
+  monImage.style.zIndex="6"
+  
+ 
  
   
   monCercle.appendChild(monImage)
@@ -521,6 +539,7 @@ for (i in mesServices){
   maDescription.style.fontFamily='raleway'
   maDescription.style.textAlign='center'
   maDescription.style.margin='20px'
+
 
   monBloc.appendChild(maDescription)
 }
