@@ -30,7 +30,7 @@ function menuOff() {
 let mesLiens = [
   {
     name: "Services",
-    lien: "",
+    lien: "#categorie",
   },
 
   {
@@ -50,7 +50,7 @@ let mesLiens = [
 
   {
     name: "l'équipe",
-    lien: "",
+    lien: "#Equipe",
   },
 
   {
