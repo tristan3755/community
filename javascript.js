@@ -17,20 +17,18 @@ document.getElementById("croix").addEventListener("click", (event) => {
   menuOff();
 });
 
-
 function menu() {
   let menu = document.getElementById("menuResponsive");
   menu.style.display = "flex";
 }
-
 
 function menuOff() {
   let menu = document.getElementById("menuResponsive");
   menu.style.display = "none";
 }
 
-
-let mesLiens = [{
+let mesLiens = [
+  {
     name: "Services",
     lien: "",
   },
@@ -66,13 +64,10 @@ for (i in mesLiens) {
   monMenu.href = mesLiens[i].lien;
   monMenu.innerHTML = mesLiens[i].name;
 
-  monMenu.addEventListener('click', (event) => {
-
+  monMenu.addEventListener("click", (event) => {
     let menu = document.getElementById("menuResponsive");
     menu.style.display = "none";
-
-
-  })
+  });
 
   document.getElementById("liens").appendChild(monMenu);
 }
@@ -319,227 +314,195 @@ function switchOffY() {
 /*************************** sect3 ******************************/
 
 let equipe = [
-
-
   {
-    nom: 'Matthieu Simonin',
-    job: 'Directeur d\'agence',
-    image: './ressources/images/boss.jpg',
-  },
-
-
-  {
-    nom: 'Abdelah Boumaza',
-    job: 'Formateur hygiène sécurité',
-    image: './ressources/images/abdela.jpg',
-  },
-
-
-  {
-    nom: 'Céllia Mouzard',
-    job: 'Chargée de communication',
-    image: './ressources/images/cellia.jpg',
-  },
-
-
-  {
-    nom: 'Christophers Pestelard ',
-    job: ' Commercial',
-    image: './ressources/images/christophers.jpg',
+    nom: "Matthieu Simonin",
+    job: "Directeur d'agence",
+    image: "./ressources/images/boss.jpg",
   },
 
   {
-    nom: 'Matthieu Zacharie',
-    job: ' Formateur Anglais',
-    image: './ressources/images/math.jpg',
+    nom: "Abdelah Boumaza",
+    job: "Formateur hygiène sécurité",
+    image: "./ressources/images/abdela.jpg",
   },
 
-]
+  {
+    nom: "Céllia Mouzard",
+    job: "Chargée de communication",
+    image: "./ressources/images/cellia.jpg",
+  },
 
+  {
+    nom: "Christophers Pestelard ",
+    job: " Commercial",
+    image: "./ressources/images/christophers.jpg",
+  },
+
+  {
+    nom: "Matthieu Zacharie",
+    job: " Formateur Anglais",
+    image: "./ressources/images/math.jpg",
+  },
+];
 
 for (i in equipe) {
+  let imageDiv = document.createElement("div");
+  imageDiv.classList.add("imageDiv");
 
-  let imageDiv = document.createElement('div')
-  imageDiv.classList.add('imageDiv')
+  let imgBox = document.createElement("div");
+  imgBox.classList.add("imgBox");
 
-  let imgBox = document.createElement('div')
-  imgBox.classList.add('imgBox')
+  let imagePerso = document.createElement("img");
+  imagePerso.src = equipe[i].image;
 
-  let imagePerso = document.createElement('img')
-  imagePerso.src = equipe[i].image
+  imgBox.appendChild(imagePerso);
+  imageDiv.appendChild(imgBox);
 
-  imgBox.appendChild(imagePerso)
-  imageDiv.appendChild(imgBox)
+  let job = document.createElement("div");
+  job.classList.add("job");
 
-  let job = document.createElement('div')
-  job.classList.add('job')
+  imageDiv.appendChild(job);
 
-  imageDiv.appendChild(job)
+  let jobText = document.createElement("p");
+  jobText.innerHTML = equipe[i].nom;
 
-  let jobText = document.createElement('p')
-  jobText.innerHTML = equipe[i].nom
+  job.appendChild(jobText);
 
-  job.appendChild(jobText)
+  let jobText2 = document.createElement("p");
+  jobText2.innerHTML = equipe[i].job;
+  jobText2.style.fontFamily = "raleway";
 
-  let jobText2 = document.createElement('p')
-  jobText2.innerHTML = equipe[i].job
-  jobText2.style.fontFamily = 'raleway'
+  job.appendChild(jobText2);
 
-  job.appendChild(jobText2)
-
-  imgBox.addEventListener('click', (event) => {
-
-    deplace()
-
-  })
+  imgBox.addEventListener("click", (event) => {
+    deplace();
+  });
 
   function deplace() {
-    imagePerso.style.transform = 'translate(-60px,-60px)'
-    imagePerso.style.transition = '2s ease-in-out'
+    imagePerso.style.transform = "translate(-60px,-60px)";
+    imagePerso.style.transition = "2s ease-in-out";
   }
 
-  window.addEventListener('load', (event) => {
-
-    setInterval(retour, 10000)
-
-  })
+  window.addEventListener("load", (event) => {
+    setInterval(retour, 20000);
+  });
 
   function retour() {
-
-    imagePerso.style.transform = 'translate(0px,0px)'
-    imagePerso.style.transition = '2s ease-in-out'
-
+    imagePerso.style.transform = "translate(0px,0px)";
+    imagePerso.style.transition = "2s ease-in-out";
   }
 
-  document.getElementById('gallery').appendChild(imageDiv)
+  document.getElementById("gallery").appendChild(imageDiv);
 }
-
 
 /*************************** catégorie ******************************/
 
-
-let mesServices=[
-
+let mesServices = [
   {
-    name:'Graphisme',
-    image:'./ressources/images/7.png',
-    description:'Identité visuelle Logo Cartes de visite Flyers/ Brochures/ Affiches...',
+    name: "Graphisme",
+    image: "./ressources/images/7.png",
+    description:
+      "Identité visuelle Logo Cartes de visite Flyers/ Brochures/ Affiches...",
   },
 
   {
-    name:'Web',
-    image:'./ressources/images/6.png',
-    description:"Création site internet Vitrine & E-Commerce Community management  "
+    name: "Web",
+    image: "./ressources/images/6.png",
+    description:
+      "Création site internet Vitrine & E-Commerce Community management  ",
   },
 
   {
-    name:'Impression',
-    image:'./ressources/images/1.png',
-    description:'Impression de tous vos outils de communication'
+    name: "Impression",
+    image: "./ressources/images/1.png",
+    description: "Impression de tous vos outils de communication",
   },
 
   {
-    name:'Photo & vidéo',
-    image:'./ressources/images/5.png',
-    description:'Shooting produits Photos & Vidéos d\'entreprise'
+    name: "Photo & vidéo",
+    image: "./ressources/images/5.png",
+    description: "Shooting produits Photos & Vidéos d'entreprise",
   },
 
   {
-    name:'Grands Formats',
-    image:'./ressources/images/2.png',
-    description:'Création d\'Enseigne Réalisation de Vitrines Signalétique'
-  },
-
-
-  {
-    name:'Publicité',
-    image:'./ressources/images/3.png',
-    description:'Objets publicitaires Textiles Vitrophanie Covering voiture Affiches Bache'
+    name: "Grands Formats",
+    image: "./ressources/images/2.png",
+    description: "Création d'Enseigne Réalisation de Vitrines Signalétique",
   },
 
   {
-    name:'Formation',
-    image:'./ressources/images/4.png',
-    description:'Objets publicitaires Textiles Vitrophanie Covering voiture Affiches Bache'
+    name: "Publicité",
+    image: "./ressources/images/3.png",
+    description:
+      "Objets publicitaires Textiles Vitrophanie Covering voiture Affiches Bache",
   },
 
-]
+  {
+    name: "Formation",
+    image: "./ressources/images/4.png",
+    description:
+      "Objets publicitaires Textiles Vitrophanie Covering voiture Affiches Bache",
+  },
+];
 
+for (i in mesServices) {
+  let monBloc = document.createElement("div");
+  monBloc.classList.add("bloc");
+  monBloc.style.height = "350px";
+  monBloc.style.width = "300px";
+  monBloc.style.margin = "20px";
+  monBloc.style.display = "flex";
+  monBloc.style.flexDirection = "column";
+  monBloc.style.alignItems = "center";
 
+  document.getElementById("services").appendChild(monBloc);
 
+  let monTitre = document.createElement("p");
+  monTitre.innerHTML = mesServices[i].name;
+  monTitre.style.fontSize = "25px";
+  monTitre.style.fontFamily = "raleway";
 
-for (i in mesServices){
+  monBloc.appendChild(monTitre);
 
-  let monBloc=document.createElement('div')
-  monBloc.classList.add('bloc')
-  monBloc.style.height='350px'
-  monBloc.style.width='300px'
-  monBloc.style.margin='20px'
-  monBloc.style.display='flex'
-  monBloc.style.flexDirection='column'
-  monBloc.style.alignItems='center'
-  
-  document.getElementById('services').appendChild(monBloc)
-  
-  let monTitre=document.createElement('p')
-  monTitre.innerHTML=mesServices[i].name
-  monTitre.style.fontSize='25px'
-  monTitre.style.fontFamily='raleway'
+  let monCercle = document.createElement("div");
+  monCercle.classList.add("cercle");
+  monCercle.style.position = "relative";
+  monCercle.style.borderRadius = "50%";
+  monCercle.style.width = "170px";
+  monCercle.style.height = "170px";
+  monCercle.style.display = "flex";
+  monCercle.style.flexDirection = "column";
+  monCercle.style.alignItems = "center";
+  monCercle.style.justifyContent = "center";
 
-  monBloc.appendChild(monTitre)
+  let monSpan = document.createElement("span");
+  monSpan.style.position = "absolute";
+  monSpan.style.top = "5px";
+  monSpan.style.left = "5px";
+  monSpan.style.right = "5px";
+  monSpan.style.bottom = "5px";
+  monSpan.style.backgroundColor = "white";
+  monSpan.style.borderRadius = "50%";
 
-  let monCercle=document.createElement('div')
-  monCercle.classList.add('cercle')
-  monCercle.style.position="relative"
-  monCercle.style.borderRadius="50%"
-  monCercle.style.width="170px"
-  monCercle.style.height="170px"
-  monCercle.style.display="flex"
-  monCercle.style.flexDirection="column"
-  monCercle.style.alignItems="center"
-  monCercle.style.justifyContent="center"
-  
-  
+  monCercle.appendChild(monSpan);
 
-  
+  monBloc.appendChild(monCercle);
 
-  let monSpan=document.createElement('span')
-  monSpan.style.position="absolute"
-  monSpan.style.top="5px"
-  monSpan.style.left="5px"
-  monSpan.style.right="5px"
-  monSpan.style.bottom="5px"
-  monSpan.style.backgroundColor="white"
-  monSpan.style.borderRadius="50%"
- 
+  let monImage = document.createElement("img");
+  monImage.classList.add("imageService");
+  monImage.src = mesServices[i].image;
+  monImage.style.height = "150px";
+  monImage.style.width = "150px";
+  monImage.style.position = "relative";
+  monImage.style.zIndex = "6";
 
+  monCercle.appendChild(monImage);
 
+  let maDescription = document.createElement("p");
+  maDescription.innerHTML = mesServices[i].description;
+  maDescription.style.fontFamily = "raleway";
+  maDescription.style.textAlign = "center";
+  maDescription.style.margin = "20px";
 
-  monCercle.appendChild(monSpan)
-
-  monBloc.appendChild(monCercle)
-  
-  
-  
-  let monImage=document.createElement('img')
-  monImage.classList.add('imageService')
-  monImage.src=mesServices[i].image
-  monImage.style.height='150px'
-  monImage.style.width='150px'
-  monImage.style.position="relative"
-  monImage.style.zIndex="6"
-  
- 
- 
-  
-  monCercle.appendChild(monImage)
-
-  let maDescription=document.createElement('p')
-  maDescription.innerHTML=mesServices[i].description
-  maDescription.style.fontFamily='raleway'
-  maDescription.style.textAlign='center'
-  maDescription.style.margin='20px'
-
-
-  monBloc.appendChild(maDescription)
+  monBloc.appendChild(maDescription);
 }
