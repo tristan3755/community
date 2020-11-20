@@ -506,3 +506,80 @@ for (i in mesServices) {
 
   monBloc.appendChild(maDescription);
 }
+
+
+/****************************** Portfolio ***************************/
+
+let mesSitesVitrines=[
+{
+image:"./ressources/images/ImagesPortfolio/thé.jpg",
+ lien:"https://www.google.fr/",
+  },
+{
+  image:"./ressources/images/ImagesPortfolio/thé.jpg",
+  lien:"https://www.google.fr/",
+  },
+ 
+]
+
+for (i in mesSitesVitrines){
+
+
+  let monSite=document.createElement('img')
+  monSite.classList.add('site')
+  monSite.style.height="auto"
+  monSite.style.width="500px"
+  monSite.style.margin="30px"
+ 
+  monSite.src=mesSitesVitrines[i].image
+
+  monSite.addEventListener('click',click(i))
+
+  function click(liens){
+
+    return function(){
+    window.open( monSite.href=mesSitesVitrines[liens].lien, '_blank')
+    }
+  }
+
+  document.getElementById('creation').appendChild(monSite)
+
+}
+
+
+
+let mesSitesCommerce=[
+  {
+  image:"./ressources/images/ImagesPortfolio/fleures.jpg",
+   lien:"https://latelier81-athome.com/",
+    },
+  {
+    image:"./ressources/images/ImagesPortfolio/keller.jpg",
+    lien:"https://groupekeller.fr/",
+    },
+   
+  ]
+  
+  for (i in mesSitesCommerce){
+  
+  
+    let monSite=document.createElement('img')
+    monSite.classList.add('site')
+    monSite.style.height="auto"
+    monSite.style.width="500px"
+    monSite.style.margin="30px"
+   
+    monSite.src=mesSitesCommerce[i].image
+  
+    monSite.addEventListener('click',click(i))
+      
+    function click(liens){
+
+      return function(){
+      window.open( monSite.href=mesSitesCommerce[liens].lien, '_blank')
+      }
+    }
+  
+    document.getElementById('Ecommerce').appendChild(monSite)
+  
+  }
