@@ -375,9 +375,9 @@ header {
   width: 100%;
 }
 
-#portfolio{
+/*#portfolio{
   margin-top:50px;
-}
+}*/
 
 #categorie h1 {
   color: black;
@@ -397,6 +397,8 @@ header {
   align-items: center;
   min-height: 80vh;
   width: 100%;
+  border-top:1px solid #e9692c;
+  border-bottom:1px solid #e9692c;
 }
 /**************************************categories***********************/
 
