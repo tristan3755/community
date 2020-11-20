@@ -385,7 +385,7 @@ header {
   text-align: center;
 }
 
-#services,#creation,#Ecommerce{
+#services,#creation,#Ecommerce,#prints,#logoVisuelle,#enseigne{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;

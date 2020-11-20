@@ -27,8 +27,7 @@ function menuOff() {
   menu.style.display = "none";
 }
 
-let mesLiens = [
-  {
+let mesLiens = [{
     name: "Services",
     lien: "#categorie",
   },
@@ -313,8 +312,7 @@ function switchOffY() {
 
 /*************************** sect3 ******************************/
 
-let equipe = [
-  {
+let equipe = [{
     nom: "Matthieu Simonin",
     job: "Directeur d'agence",
     image: "./ressources/images/boss.jpg",
@@ -397,19 +395,16 @@ for (i in equipe) {
 
 /*************************** catégorie ******************************/
 
-let mesServices = [
-  {
+let mesServices = [{
     name: "Graphisme",
     image: "./ressources/images/7.png",
-    description:
-      "Identité visuelle Logo Cartes de visite Flyers/ Brochures/ Affiches...",
+    description: "Identité visuelle Logo Cartes de visite Flyers/ Brochures/ Affiches...",
   },
 
   {
     name: "Web",
     image: "./ressources/images/6.png",
-    description:
-      "Création site internet Vitrine & E-Commerce Community management  ",
+    description: "Création site internet Vitrine & E-Commerce Community management  ",
   },
 
   {
@@ -433,15 +428,13 @@ let mesServices = [
   {
     name: "Publicité",
     image: "./ressources/images/3.png",
-    description:
-      "Objets publicitaires Textiles Vitrophanie Covering voiture Affiches Bache",
+    description: "Objets publicitaires Textiles Vitrophanie Covering voiture Affiches Bache",
   },
 
   {
     name: "Formation",
     image: "./ressources/images/4.png",
-    description:
-      "Objets publicitaires Textiles Vitrophanie Covering voiture Affiches Bache",
+    description: "Objets publicitaires Textiles Vitrophanie Covering voiture Affiches Bache",
   },
 ];
 
@@ -510,66 +503,62 @@ for (i in mesServices) {
 
 /****************************** Portfolio ***************************/
 
-let mesSitesVitrines=[
-{
-image:"./ressources/images/ImagesPortfolio/cookoon.jpg",
- lien:"https://lecookoon-nancy.fr/",
+let mesSitesVitrines = [{
+    image: "./ressources/images/ImagesPortfolio/cookoon.jpg",
+    lien: "https://lecookoon-nancy.fr/",
   },
-{
-  image:"./ressources/images/ImagesPortfolio/thé.jpg",
-  lien:"https://www.google.fr/",
+  {
+    image: "./ressources/images/ImagesPortfolio/voiture.jpg",
+    lien: "http://glpermis.fr//",
   },
- 
-
- 
 
 ]
 
-for (i in mesSitesVitrines){
+for (i in mesSitesVitrines) {
 
 
-  let monSite=document.createElement('img')
+  let monSite = document.createElement('img')
   monSite.classList.add('site')
-  monSite.style.height="auto"
-  monSite.style.width="500px"
-  monSite.style.margin="50px"
-  monSite.style.filter="grayscale(60%)"
- 
-  monSite.src=mesSitesVitrines[i].image
+  monSite.style.height = "auto"
+  monSite.style.width = "500px"
+  monSite.style.margin = "50px"
+  monSite.style.filter = "grayscale(60%)"
 
-  
-  monSite.addEventListener('mouseover',(event)=>{
-
-    
-    monSite.style.transition="2s"
-      monSite.style.transform="scale(1.2)"
-      monSite.style.cursor="pointer"
-      monSite.style.boxShadow=" black 5px 5px 5px"
-      monSite.style.filter="grayscale(0%)"
-
-  })
+  monSite.src = mesSitesVitrines[i].image
 
 
-  monSite.addEventListener('mouseout',(event)=>{
+  monSite.addEventListener('mouseover', (event) => {
 
-    
-    monSite.style.transition="2s"
-    monSite.style.transform="scale(1)"
-    monSite.style.cursor="pointer"
-    monSite.style.boxShadow=" none"
-    monSite.style.filter="grayscale(60%)"
-   
 
+    monSite.style.transition = "2s"
+    monSite.style.transform = "scale(1.2)"
+    monSite.style.cursor = "pointer"
+    monSite.style.boxShadow = " black 5px 5px 5px"
+    monSite.style.filter = "grayscale(0%)"
 
   })
 
 
-  monSite.addEventListener('click',click(i))
+  monSite.addEventListener('mouseout', (event) => {
 
-  function click(liens){
 
-    return function(){
-    window.open( monSite.href=mesSitesVitrines[liens].lien, '_blank')
+    monSite.style.transition = "2s"
+    monSite.style.transform = "scale(1)"
+    monSite.style.cursor = "pointer"
+    monSite.style.boxShadow = " none"
+    monSite.style.filter = "grayscale(60%)"
+
+
+
+  })
+
+
+  monSite.addEventListener('click', click(i))
+
+  function click(liens) {
+
+    return function () {
+      window.open(monSite.href = mesSitesVitrines[liens].lien, '_blank')
     }
   }
 
@@ -579,62 +568,222 @@ for (i in mesSitesVitrines){
 
 
 
-let mesSitesCommerce=[
+let mesSitesCommerce = [{
+    image: "./ressources/images/ImagesPortfolio/fleures.jpg",
+    lien: "https://latelier81-athome.com/",
+  },
   {
-  image:"./ressources/images/ImagesPortfolio/fleures.jpg",
-   lien:"https://latelier81-athome.com/",
-    },
-  {
-    image:"./ressources/images/ImagesPortfolio/keller.jpg",
-    lien:"https://groupekeller.fr/",
-    },
-   
-  ]
-  
-  for (i in mesSitesCommerce){
-  
-  
-    let monSite=document.createElement('img')
-    monSite.classList.add('site')
-    monSite.style.height="auto"
-    monSite.style.width="500px"
-    monSite.style.margin="30px"
-    monSite.style.filter="grayscale(60%)"
-   
-    monSite.src=mesSitesCommerce[i].image
+    image: "./ressources/images/ImagesPortfolio/keller.jpg",
+    lien: "https://groupekeller.fr/",
+  },
 
-    monSite.addEventListener('mouseover',(event)=>{
+]
 
-      monSite.style.transition="2s"
-      monSite.style.transform="scale(1.2)"
-      monSite.style.cursor="pointer"
-      monSite.style.boxShadow=" black 5px 5px 5px"
-      monSite.style.filter="grayscale(0%)"
+for (i in mesSitesCommerce) {
 
 
-    })
-  
+  let monSite = document.createElement('img')
+  monSite.classList.add('site')
+  monSite.style.height = "auto"
+  monSite.style.width = "500px"
+  monSite.style.margin = "50px"
+  monSite.style.filter = "grayscale(60%)"
 
-    monSite.addEventListener('mouseout',(event)=>{
+  monSite.src = mesSitesCommerce[i].image
 
-      monSite.style.transition="2s"
-      monSite.style.transform="scale(1)"
-      monSite.style.cursor="pointer"
-      monSite.style.filter="grayscale(60%)"
-      monSite.style.boxShadow="none"
+  monSite.addEventListener('mouseover', (event) => {
+
+    monSite.style.transition = "2s"
+    monSite.style.transform = "scale(1.2)"
+    monSite.style.cursor = "pointer"
+    monSite.style.boxShadow = " black 5px 5px 5px"
+    monSite.style.filter = "grayscale(0%)"
 
 
-    })
+  })
 
-    monSite.addEventListener('click',click(i))
-      
-    function click(liens){
 
-      return function(){
-      window.open( monSite.href=mesSitesCommerce[liens].lien, '_blank')
-      }
+  monSite.addEventListener('mouseout', (event) => {
+
+    monSite.style.transition = "2s"
+    monSite.style.transform = "scale(1)"
+    monSite.style.cursor = "pointer"
+    monSite.style.filter = "grayscale(60%)"
+    monSite.style.boxShadow = "none"
+
+
+  })
+
+  monSite.addEventListener('click', click(i))
+
+  function click(liens) {
+
+    return function () {
+      window.open(monSite.href = mesSitesCommerce[liens].lien, '_blank')
     }
-  
-    document.getElementById('Ecommerce').appendChild(monSite)
-  
   }
+
+  document.getElementById('Ecommerce').appendChild(monSite)
+
+}
+
+
+let mesPrints = [{
+    image: "./ressources/images/ImagesPortfolio/fleures.jpg",
+
+  },
+  {
+    image: "./ressources/images/ImagesPortfolio/keller.jpg",
+
+  },
+
+]
+
+for (i in mesPrints) {
+
+
+  let monPrint = document.createElement('img')
+  monPrint.classList.add('site')
+  monPrint.style.height = "auto"
+  monPrint.style.width = "500px"
+  monPrint.style.margin = "50px"
+  monPrint.style.filter = "grayscale(60%)"
+
+  monPrint.src = mesPrints[i].image
+
+  monPrint.addEventListener('mouseover', (event) => {
+
+    monPrint.style.transition = "2s"
+    monPrint.style.transform = "scale(1.2)"
+    monPrint.style.cursor = "pointer"
+    monPrint.style.boxShadow = " black 5px 5px 5px"
+    monPrint.style.filter = "grayscale(0%)"
+
+
+  })
+
+
+  monPrint.addEventListener('mouseout', (event) => {
+
+    monPrint.style.transition = "2s"
+    monPrint.style.transform = "scale(1)"
+    monPrint.style.cursor = "pointer"
+    monPrint.style.filter = "grayscale(60%)"
+    monPrint.style.boxShadow = "none"
+
+
+  })
+
+
+
+  document.getElementById('prints').appendChild(monPrint)
+
+}
+
+
+
+
+let mesIdentite = [{
+  image: "./ressources/images/ImagesPortfolio/fleures.jpg",
+
+},
+{
+  image: "./ressources/images/ImagesPortfolio/keller.jpg",
+
+},
+
+]
+
+for (i in mesIdentite) {
+
+
+let monLogo = document.createElement('img')
+monLogo .classList.add('site')
+monLogo .style.height = "auto"
+monLogo .style.width = "500px"
+monLogo .style.margin = "50px"
+monLogo .style.filter = "grayscale(60%)"
+
+monLogo .src = mesIdentite[i].image
+
+monLogo .addEventListener('mouseover', (event) => {
+
+  monLogo .style.transition = "2s"
+  monLogo .style.transform = "scale(1.2)"
+  monLogo .style.cursor = "pointer"
+  monLogo .style.boxShadow = " black 5px 5px 5px"
+  monLogo .style.filter = "grayscale(0%)"
+
+
+})
+
+
+monLogo .addEventListener('mouseout', (event) => {
+
+  monLogo .style.transition = "2s"
+  monLogo .style.transform = "scale(1)"
+  monLogo .style.cursor = "pointer"
+  monLogo .style.filter = "grayscale(60%)"
+  monLogo .style.boxShadow = "none"
+
+
+})
+
+
+
+document.getElementById('logoVisuelle').appendChild(monLogo )
+
+}
+
+
+let mesEnseignes = [{
+  image: "./ressources/images/ImagesPortfolio/fleures.jpg",
+
+},
+{
+  image: "./ressources/images/ImagesPortfolio/keller.jpg",
+
+},
+
+]
+
+for (i in mesEnseignes) {
+
+
+let monEnseigne = document.createElement('img')
+monEnseigne .classList.add('site')
+monEnseigne .style.height = "auto"
+monEnseigne .style.width = "500px"
+monEnseigne .style.margin = "50px"
+monEnseigne .style.filter = "grayscale(60%)"
+
+monEnseigne .src = mesEnseignes[i].image
+
+monEnseigne .addEventListener('mouseover', (event) => {
+
+  monEnseigne .style.transition = "2s"
+  monEnseigne .style.transform = "scale(1.2)"
+  monEnseigne .style.cursor = "pointer"
+  monEnseigne .style.boxShadow = " black 5px 5px 5px"
+  monEnseigne .style.filter = "grayscale(0%)"
+
+
+})
+
+
+monEnseigne .addEventListener('mouseout', (event) => {
+
+  monEnseigne .style.transition = "2s"
+  monEnseigne .style.transform = "scale(1)"
+  monEnseigne .style.cursor = "pointer"
+  monEnseigne .style.filter = "grayscale(60%)"
+  monEnseigne .style.boxShadow = "none"
+
+
+})
+
+
+
+document.getElementById('enseigne').appendChild(monEnseigne )
+
+}
