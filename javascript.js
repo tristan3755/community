@@ -512,14 +512,17 @@ for (i in mesServices) {
 
 let mesSitesVitrines=[
 {
-image:"./ressources/images/ImagesPortfolio/thé.jpg",
- lien:"https://www.google.fr/",
+image:"./ressources/images/ImagesPortfolio/cookoon.jpg",
+ lien:"https://lecookoon-nancy.fr/",
   },
 {
   image:"./ressources/images/ImagesPortfolio/thé.jpg",
   lien:"https://www.google.fr/",
   },
  
+
+ 
+
 ]
 
 for (i in mesSitesVitrines){
@@ -529,9 +532,37 @@ for (i in mesSitesVitrines){
   monSite.classList.add('site')
   monSite.style.height="auto"
   monSite.style.width="500px"
-  monSite.style.margin="30px"
+  monSite.style.margin="50px"
+  monSite.style.filter="grayscale(60%)"
  
   monSite.src=mesSitesVitrines[i].image
+
+  
+  monSite.addEventListener('mouseover',(event)=>{
+
+    
+    monSite.style.transition="2s"
+      monSite.style.transform="scale(1.2)"
+      monSite.style.cursor="pointer"
+      monSite.style.boxShadow=" black 5px 5px 5px"
+      monSite.style.filter="grayscale(0%)"
+
+  })
+
+
+  monSite.addEventListener('mouseout',(event)=>{
+
+    
+    monSite.style.transition="2s"
+    monSite.style.transform="scale(1)"
+    monSite.style.cursor="pointer"
+    monSite.style.boxShadow=" none"
+    monSite.style.filter="grayscale(60%)"
+   
+
+
+  })
+
 
   monSite.addEventListener('click',click(i))
 
@@ -568,9 +599,33 @@ let mesSitesCommerce=[
     monSite.style.height="auto"
     monSite.style.width="500px"
     monSite.style.margin="30px"
+    monSite.style.filter="grayscale(60%)"
    
     monSite.src=mesSitesCommerce[i].image
+
+    monSite.addEventListener('mouseover',(event)=>{
+
+      monSite.style.transition="2s"
+      monSite.style.transform="scale(1.2)"
+      monSite.style.cursor="pointer"
+      monSite.style.boxShadow=" black 5px 5px 5px"
+      monSite.style.filter="grayscale(0%)"
+
+
+    })
   
+
+    monSite.addEventListener('mouseout',(event)=>{
+
+      monSite.style.transition="2s"
+      monSite.style.transform="scale(1)"
+      monSite.style.cursor="pointer"
+      monSite.style.filter="grayscale(60%)"
+      monSite.style.boxShadow="none"
+
+
+    })
+
     monSite.addEventListener('click',click(i))
       
     function click(liens){
