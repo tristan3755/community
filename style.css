@@ -375,6 +375,10 @@ header {
   width: 100%;
 }
 
+#portfolio{
+  margin-top:50px;
+}
+
 #categorie h1 {
   color: black;
   font-family: "bien";
