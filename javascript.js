@@ -700,6 +700,8 @@ for (i in mesEnseignes) {
 
   monEnseigne.src = mesEnseignes[i].image;
 
+
+
   monEnseigne.addEventListener("mouseover", (event) => {
     monEnseigne.style.transition = "2s";
     monEnseigne.style.transform = "scale(1.2)";
@@ -716,5 +718,18 @@ for (i in mesEnseignes) {
     monEnseigne.style.boxShadow = "none";
   });
 
+  if(monEnseigne.style.transform >"scale(1)"){
+
+    monEnseigne.style.filter="blur(2px)"
+
+  }else{
+
+    monEnseigne.style.filter="blur(0px)"
+
+  }
+
+ 
   document.getElementById("enseigne").appendChild(monEnseigne);
 }
+
+
