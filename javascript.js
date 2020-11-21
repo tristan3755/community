@@ -450,6 +450,7 @@ for (i in mesServices) {
   monBloc.classList.add("bloc");
   monBloc.style.height = "350px";
   monBloc.style.width = "300px";
+  monBloc.style.maxWidth="100%"
   monBloc.style.margin = "20px";
   monBloc.style.display = "flex";
   monBloc.style.flexDirection = "column";
@@ -468,8 +469,8 @@ for (i in mesServices) {
   monCercle.classList.add("cercle");
   monCercle.style.position = "relative";
   monCercle.style.borderRadius = "50%";
-  monCercle.style.width = "170px";
-  monCercle.style.height = "170px";
+  monCercle.style.width = "160px";
+  monCercle.style.height = "160px";
   monCercle.style.display = "flex";
   monCercle.style.flexDirection = "column";
   monCercle.style.alignItems = "center";
@@ -491,8 +492,8 @@ for (i in mesServices) {
   let monImage = document.createElement("img");
   monImage.classList.add("imageService");
   monImage.src = mesServices[i].image;
-  monImage.style.height = "150px";
-  monImage.style.width = "150px";
+  monImage.style.height = "160px";
+  monImage.style.width = "160px";
   monImage.style.position = "relative";
   monImage.style.zIndex = "6";
 
@@ -524,7 +525,8 @@ for (i in mesSitesVitrines) {
   let monSite = document.createElement("img");
   monSite.classList.add("site");
   monSite.style.height = "auto";
-  monSite.style.width = "500px";
+  monSite.style.width = "600px";
+  monSite.style.maxWidth = "80%";
   monSite.style.margin = "50px";
   monSite.style.filter = "grayscale(60%)";
 
@@ -532,7 +534,7 @@ for (i in mesSitesVitrines) {
 
   monSite.addEventListener("mouseover", (event) => {
     monSite.style.transition = "2s";
-    monSite.style.transform = "scale(1.2)";
+    monSite.style.transform = "scale(1.1)";
     monSite.style.cursor = "pointer";
     monSite.style.boxShadow = " black 5px 5px 5px";
     monSite.style.filter = "grayscale(0%)";
@@ -572,7 +574,8 @@ for (i in mesSitesCommerce) {
   let monSite = document.createElement("img");
   monSite.classList.add("site");
   monSite.style.height = "auto";
-  monSite.style.width = "500px";
+  monSite.style.width = "600px";
+  monSite.style.maxWidth="80%"
   monSite.style.margin = "50px";
   monSite.style.filter = "grayscale(60%)";
 
@@ -580,7 +583,7 @@ for (i in mesSitesCommerce) {
 
   monSite.addEventListener("mouseover", (event) => {
     monSite.style.transition = "2s";
-    monSite.style.transform = "scale(1.2)";
+    monSite.style.transform = "scale(1.1)";
     monSite.style.cursor = "pointer";
     monSite.style.boxShadow = " black 5px 5px 5px";
     monSite.style.filter = "grayscale(0%)";
@@ -618,7 +621,8 @@ for (i in mesPrints) {
   let monPrint = document.createElement("img");
   monPrint.classList.add("site");
   monPrint.style.height = "auto";
-  monPrint.style.width = "500px";
+  monPrint.style.width = "600px";
+  monPrint.style.maxWidth="80%"
   monPrint.style.margin = "50px";
   monPrint.style.filter = "grayscale(60%)";
 
@@ -626,7 +630,7 @@ for (i in mesPrints) {
 
   monPrint.addEventListener("mouseover", (event) => {
     monPrint.style.transition = "2s";
-    monPrint.style.transform = "scale(1.2)";
+    monPrint.style.transform = "scale(1.1)";
     monPrint.style.cursor = "pointer";
     monPrint.style.boxShadow = " black 5px 5px 5px";
     monPrint.style.filter = "grayscale(0%)";
@@ -656,7 +660,8 @@ for (i in mesIdentite) {
   let monLogo = document.createElement("img");
   monLogo.classList.add("site");
   monLogo.style.height = "auto";
-  monLogo.style.width = "500px";
+  monLogo.style.width = "600px";
+  monLogo.style.maxWidth="80%"
   monLogo.style.margin = "50px";
   monLogo.style.filter = "grayscale(60%)";
 
@@ -664,7 +669,7 @@ for (i in mesIdentite) {
 
   monLogo.addEventListener("mouseover", (event) => {
     monLogo.style.transition = "2s";
-    monLogo.style.transform = "scale(1.2)";
+    monLogo.style.transform = "scale(1.1)";
     monLogo.style.cursor = "pointer";
     monLogo.style.boxShadow = " black 5px 5px 5px";
     monLogo.style.filter = "grayscale(0%)";
@@ -694,7 +699,8 @@ for (i in mesEnseignes) {
   let monEnseigne = document.createElement("img");
   monEnseigne.classList.add("site");
   monEnseigne.style.height = "auto";
-  monEnseigne.style.width = "500px";
+  monEnseigne.style.width = "600px";
+  monEnseigne.style.maxWidth="80%"
   monEnseigne.style.margin = "50px";
   monEnseigne.style.filter = "grayscale(60%)";
 
@@ -704,7 +710,7 @@ for (i in mesEnseignes) {
 
   monEnseigne.addEventListener("mouseover", (event) => {
     monEnseigne.style.transition = "2s";
-    monEnseigne.style.transform = "scale(1.2)";
+    monEnseigne.style.transform = "scale(1.1)";
     monEnseigne.style.cursor = "pointer";
     monEnseigne.style.boxShadow = " black 5px 5px 5px";
     monEnseigne.style.filter = "grayscale(0%)";
@@ -731,5 +737,3 @@ for (i in mesEnseignes) {
  
   document.getElementById("enseigne").appendChild(monEnseigne);
 }
-
-
