@@ -1,6 +1,3 @@
-
-
-
 window.addEventListener("scroll", (event) => {
   nav();
 });
@@ -349,7 +346,6 @@ let equipe = [
 ];
 
 for (i in equipe) {
-
   let imageDiv = document.createElement("div");
   imageDiv.classList.add("imageDiv");
 
@@ -358,7 +354,6 @@ for (i in equipe) {
 
   let imagePerso = document.createElement("img");
   imagePerso.src = equipe[i].image;
-
 
   imgBox.appendChild(imagePerso);
   imageDiv.appendChild(imgBox);
@@ -379,39 +374,25 @@ for (i in equipe) {
 
   job.appendChild(jobText2);
 
-
-    if (window.matchMedia("(max-width: 700px)").matches) {
-
-     
-    
-      imagePerso.addEventListener('click',(e)=>{
-        e.target.style.transform = "translate(0px,-60px)";
-        e.target.style.transition = "2s ease-in-out";
-      })
-
-  
-    }else{
-
-
-    imagePerso.addEventListener('mouseover',(e)=>{
+  if (window.matchMedia("(max-width: 700px)").matches) {
+    imagePerso.addEventListener("click", (e) => {
+      e.target.style.transform = "translate(0px,-60px)";
+      e.target.style.transition = "2s ease-in-out";
+    });
+  } else {
+    imagePerso.addEventListener("mouseover", (e) => {
       e.target.style.transform = "translate(-60px,-60px)";
       e.target.style.transition = "2s ease-in-out";
-    })
+    });
 
-    imagePerso.addEventListener('mouseout',(e)=>{
+    imagePerso.addEventListener("mouseout", (e) => {
       e.target.style.transform = "translate(0px,0px)";
       e.target.style.transition = "2s ease-in-out";
-    })
-   
-    
+    });
   }
-
 
   document.getElementById("gallery").appendChild(imageDiv);
 }
-
-
-
 
 /*************************** catégorie ******************************/
 
@@ -468,7 +449,7 @@ for (i in mesServices) {
   monBloc.classList.add("bloc");
   monBloc.style.height = "350px";
   monBloc.style.width = "300px";
-  monBloc.style.maxWidth="100%"
+  monBloc.style.maxWidth = "100%";
   monBloc.style.margin = "20px";
   monBloc.style.display = "flex";
   monBloc.style.flexDirection = "column";
@@ -568,16 +549,14 @@ for (i in mesSitesVitrines) {
 
   monSite.addEventListener("click", click(i));
 
-
   document.getElementById("creation").appendChild(monSite);
 }
 
 function click(liens) {
   return function () {
-    window.open((mesSitesVitrines[liens].lien), "_blank");
+    window.open(mesSitesVitrines[liens].lien, "_blank");
   };
 }
-
 
 let mesSitesCommerce = [
   {
@@ -595,7 +574,7 @@ for (i in mesSitesCommerce) {
   monSite.classList.add("site");
   monSite.style.height = "auto";
   monSite.style.width = "600px";
-  monSite.style.maxWidth="80%"
+  monSite.style.maxWidth = "80%";
   monSite.style.margin = "50px";
   monSite.style.filter = "grayscale(60%)";
 
@@ -619,16 +598,14 @@ for (i in mesSitesCommerce) {
 
   monSite.addEventListener("click", click2(i));
 
-  
   document.getElementById("Ecommerce").appendChild(monSite);
 }
 
 function click2(liens) {
   return function () {
-    window.open(( mesSitesCommerce[liens].lien), "_blank");
+    window.open(mesSitesCommerce[liens].lien, "_blank");
   };
 }
-
 
 let mesPrints = [
   {
@@ -644,7 +621,7 @@ for (i in mesPrints) {
   monPrint.classList.add("site");
   monPrint.style.height = "auto";
   monPrint.style.width = "600px";
-  monPrint.style.maxWidth="80%"
+  monPrint.style.maxWidth = "80%";
   monPrint.style.margin = "50px";
   monPrint.style.filter = "grayscale(60%)";
 
@@ -683,7 +660,7 @@ for (i in mesIdentite) {
   monLogo.classList.add("site");
   monLogo.style.height = "auto";
   monLogo.style.width = "600px";
-  monLogo.style.maxWidth="80%"
+  monLogo.style.maxWidth = "80%";
   monLogo.style.margin = "50px";
   monLogo.style.filter = "grayscale(60%)";
 
@@ -722,13 +699,11 @@ for (i in mesEnseignes) {
   monEnseigne.classList.add("site");
   monEnseigne.style.height = "auto";
   monEnseigne.style.width = "600px";
-  monEnseigne.style.maxWidth="80%"
+  monEnseigne.style.maxWidth = "80%";
   monEnseigne.style.margin = "50px";
   monEnseigne.style.filter = "grayscale(60%)";
 
   monEnseigne.src = mesEnseignes[i].image;
-
-
 
   monEnseigne.addEventListener("mouseover", (event) => {
     monEnseigne.style.transition = "2s";
@@ -746,19 +721,11 @@ for (i in mesEnseignes) {
     monEnseigne.style.boxShadow = "none";
   });
 
-  if(monEnseigne.style.transform >"scale(1)"){
-
-    monEnseigne.style.filter="blur(2px)"
-
-  }else{
-
-    monEnseigne.style.filter="blur(0px)"
-
+  if (monEnseigne.style.transform > "scale(1)") {
+    monEnseigne.style.filter = "blur(2px)";
+  } else {
+    monEnseigne.style.filter = "blur(0px)";
   }
 
- 
   document.getElementById("enseigne").appendChild(monEnseigne);
 }
-
-
-
