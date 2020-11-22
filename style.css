@@ -81,7 +81,7 @@ header {
   display: none;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   height: 100vh;
   width: 100%;
   background-color: #e9692c;
@@ -94,17 +94,32 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   height: 100vh;
   width: 100%;
+}
+
+.reseauMenu{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 250px;
+  height: 100px;
+  
+  
+}
+
+.reseauMenu a>*{
+  font-size: 30px;
 }
 
 #liens {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  height: 70vh;
+  justify-content: space-evenly;
+  height: 50vh;
   width: 100%;
 }
 
@@ -497,7 +512,56 @@ header {
   text-align: center;
 }
 
+/**************************************Abientot*************************************************/
 
+#aBientot{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  background-color:black;
+  cursor: none;
+}
+
+.text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 70vh;
+  width: 100%;
+}
+
+.text h2{
+  text-align: center;
+  font-size: 300%;
+  font-family:'bien' ;
+  z-index: 1;
+  font-weight: 100;
+  padding:30px ;
+}
+
+
+.lumiere{
+  position: absolute;
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+  transition: 0.1s;
+  clip-path: circle(50px at var(--x) var(--y));
+
+}
+
+.text h2:hover ~ .lumiere{
+
+  clip-path: circle(200px at var(--x) var(--y));
+
+}
+
+/**************************************Abientot*************************************************/
 
 /**************************************footer*************************************************/
 

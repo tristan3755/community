@@ -353,6 +353,7 @@ for (i in equipe) {
   imgBox.classList.add("imgBox");
 
   let imagePerso = document.createElement("img");
+  
   imagePerso.src = equipe[i].image;
 
   imgBox.appendChild(imagePerso);
@@ -536,7 +537,7 @@ for (i in mesSitesVitrines) {
     monSite.style.transition = "2s";
     monSite.style.transform = "scale(1.1)";
     monSite.style.cursor = "pointer";
-    monSite.style.boxShadow = " black 5px 5px 5px";
+    monSite.style.boxShadow = " gray 5px 5px 5px";
     monSite.style.filter = "grayscale(0%)";
   });
 
@@ -585,7 +586,7 @@ for (i in mesSitesCommerce) {
     monSite.style.transition = "2s";
     monSite.style.transform = "scale(1.1)";
     monSite.style.cursor = "pointer";
-    monSite.style.boxShadow = " black 5px 5px 5px";
+    monSite.style.boxShadow = " gray 5px 5px 5px";
     monSite.style.filter = "grayscale(0%)";
   });
 
@@ -632,7 +633,7 @@ for (i in mesPrints) {
     monPrint.style.transition = "2s";
     monPrint.style.transform = "scale(1.1)";
     monPrint.style.cursor = "pointer";
-    monPrint.style.boxShadow = " black 5px 5px 5px";
+    monPrint.style.boxShadow = " gray 5px 5px 5px";
     monPrint.style.filter = "grayscale(0%)";
   });
 
@@ -671,7 +672,7 @@ for (i in mesIdentite) {
     monLogo.style.transition = "2s";
     monLogo.style.transform = "scale(1.1)";
     monLogo.style.cursor = "pointer";
-    monLogo.style.boxShadow = " black 5px 5px 5px";
+    monLogo.style.boxShadow = " gray 5px 5px 5px";
     monLogo.style.filter = "grayscale(0%)";
   });
 
@@ -710,7 +711,7 @@ for (i in mesEnseignes) {
     monEnseigne.style.transition = "2s";
     monEnseigne.style.transform = "scale(1.1)";
     monEnseigne.style.cursor = "pointer";
-    monEnseigne.style.boxShadow = " black 5px 5px 5px";
+    monEnseigne.style.boxShadow = " gray 5px 5px 5px";
     monEnseigne.style.filter = "grayscale(0%)";
   });
 
@@ -730,3 +731,10 @@ for (i in mesEnseignes) {
 
   document.getElementById("enseigne").appendChild(monEnseigne);
 }
+
+/************************************clipPath ************************************/
+
+ document.documentElement.addEventListener('mousemove',(event)=>{
+  document.documentElement.style.setProperty('--x',event.clientX+'px')
+  document.documentElement.style.setProperty('--y',event.clientY+'px')
+ })
