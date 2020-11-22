@@ -374,7 +374,7 @@ for (i in equipe) {
 
   job.appendChild(jobText2);
 
-  imgBox.addEventListener("click", (event) => {
+  imagePerso.addEventListener("click", (event) => {
     deplace();
   });
 
@@ -550,14 +550,16 @@ for (i in mesSitesVitrines) {
 
   monSite.addEventListener("click", click(i));
 
-  function click(liens) {
-    return function () {
-      window.open((monSite.href = mesSitesVitrines[liens].lien), "_blank");
-    };
-  }
 
   document.getElementById("creation").appendChild(monSite);
 }
+
+function click(liens) {
+  return function () {
+    window.open((mesSitesVitrines[liens].lien), "_blank");
+  };
+}
+
 
 let mesSitesCommerce = [
   {
@@ -597,16 +599,18 @@ for (i in mesSitesCommerce) {
     monSite.style.boxShadow = "none";
   });
 
-  monSite.addEventListener("click", click(i));
+  monSite.addEventListener("click", click2(i));
 
-  function click(liens) {
-    return function () {
-      window.open((monSite.href = mesSitesCommerce[liens].lien), "_blank");
-    };
-  }
-
+  
   document.getElementById("Ecommerce").appendChild(monSite);
 }
+
+function click2(liens) {
+  return function () {
+    window.open(( mesSitesCommerce[liens].lien), "_blank");
+  };
+}
+
 
 let mesPrints = [
   {
