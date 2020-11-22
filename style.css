@@ -556,6 +556,14 @@ footer {
   border-left: 1px whitesmoke solid;
 }
 
+@media(max-width:376px){
+
+.borderLeft{
+  display: none;
+}
+
+}
+
 .borderFin {
   min-height: 170px;
   border-left: 1px black solid;
@@ -569,6 +577,7 @@ footer {
   align-items: center;
   min-height: 150px;
   width: 200px;
+  margin: auto;
 }
 
 .Nancy h2 {

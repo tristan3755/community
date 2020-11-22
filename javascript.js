@@ -261,7 +261,7 @@ function switchOffI() {
   o.style.textShadow = "none";
 }
 
-/////////////////////////* t*//////////////////////////
+/////////////////////////*t*//////////////////////////
 
 window.addEventListener("load", (event) => {
   setInterval(switchOnT, 620);
