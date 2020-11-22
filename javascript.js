@@ -1,3 +1,6 @@
+
+
+
 window.addEventListener("scroll", (event) => {
   nav();
 });
@@ -346,6 +349,7 @@ let equipe = [
 ];
 
 for (i in equipe) {
+
   let imageDiv = document.createElement("div");
   imageDiv.classList.add("imageDiv");
 
@@ -354,6 +358,7 @@ for (i in equipe) {
 
   let imagePerso = document.createElement("img");
   imagePerso.src = equipe[i].image;
+
 
   imgBox.appendChild(imagePerso);
   imageDiv.appendChild(imgBox);
@@ -374,26 +379,39 @@ for (i in equipe) {
 
   job.appendChild(jobText2);
 
-  imagePerso.addEventListener("click", (event) => {
-    deplace();
-  });
 
-  function deplace() {
-    imagePerso.style.transform = "translate(-60px,-60px)";
-    imagePerso.style.transition = "2s ease-in-out";
+    if (window.matchMedia("(max-width: 700px)").matches) {
+
+     
+    
+      imagePerso.addEventListener('click',(e)=>{
+        e.target.style.transform = "translate(0px,-60px)";
+        e.target.style.transition = "2s ease-in-out";
+      })
+
+  
+    }else{
+
+
+    imagePerso.addEventListener('mouseover',(e)=>{
+      e.target.style.transform = "translate(-60px,-60px)";
+      e.target.style.transition = "2s ease-in-out";
+    })
+
+    imagePerso.addEventListener('mouseout',(e)=>{
+      e.target.style.transform = "translate(0px,0px)";
+      e.target.style.transition = "2s ease-in-out";
+    })
+   
+    
   }
 
-  window.addEventListener("load", (event) => {
-    setInterval(retour, 20000);
-  });
-
-  function retour() {
-    imagePerso.style.transform = "translate(0px,0px)";
-    imagePerso.style.transition = "2s ease-in-out";
-  }
 
   document.getElementById("gallery").appendChild(imageDiv);
 }
+
+
+
 
 /*************************** catégorie ******************************/
 
@@ -741,3 +759,6 @@ for (i in mesEnseignes) {
  
   document.getElementById("enseigne").appendChild(monEnseigne);
 }
+
+
+
