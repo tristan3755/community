@@ -383,6 +383,7 @@ for (i in equipe) {
     imagePerso.addEventListener("mouseover", (e) => {
       e.target.style.transform = "translate(-60px,-60px)";
       e.target.style.transition = "2s ease-in-out";
+      e.target.style.cursor = "pointer";
     });
 
     imagePerso.addEventListener("mouseout", (e) => {
