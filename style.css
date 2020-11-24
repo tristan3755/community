@@ -112,6 +112,7 @@ header {
 
 .reseauMenu a>*{
   font-size: 30px;
+  animation: lien 5s;
 }
 
 #liens {
@@ -563,12 +564,9 @@ opacity: 1;
 
 
 @media(max-width:400px){
-
   .text h2{
     padding:20px;
   }
-
-
 }
 
 
@@ -576,13 +574,8 @@ opacity: 1;
 
   
   .lumiere{
-   position: absolute;
-    clip-path: circle(100px at var(--x) var(--y));
-    height: 100%;
-    width: 100%;
-    
-    
-  }
+   z-index: -10;
+}
   
   #waldo{
     opacity: 1;

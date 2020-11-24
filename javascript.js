@@ -742,9 +742,24 @@ for (i in mesEnseignes) {
   document.documentElement.style.setProperty('--y',event.clientY+'px')
  })
 }else{
-  document.documentElement.addEventListener('click',(event)=>{
-    document.documentElement.style.setProperty('--x',event.clientX+'px')
-    document.documentElement.style.setProperty('--y',event.clientY+'px')
-})
+  window.addEventListener('load',(event)=>{
+    lumiere1()
+    lumiere2()
+  })
+
+
+  function lumiere1(){
+    let lampe1=document.querySelector('.alors')
+    lampe1.style.backgroundColor="white"
+    lampe1.style.borderRadius="40%"
+  }
+
+  function lumiere2(){
+    let lampe2=document.querySelector('.bientot')
+    lampe2.style.backgroundColor="white"
+    lampe2.style.borderRadius="40%"
+    lampe2.style.width="60%"
+  }
 
 }
+
