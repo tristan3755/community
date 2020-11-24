@@ -736,7 +736,15 @@ for (i in mesEnseignes) {
 
 
 
+ if (window.matchMedia("(min-width: 810px)").matches){
  document.documentElement.addEventListener('mousemove',(event)=>{
   document.documentElement.style.setProperty('--x',event.clientX+'px')
   document.documentElement.style.setProperty('--y',event.clientY+'px')
  })
+}else{
+  document.documentElement.addEventListener('click',(event)=>{
+    document.documentElement.style.setProperty('--x',event.clientX+'px')
+    document.documentElement.style.setProperty('--y',event.clientY+'px')
+})
+
+}
