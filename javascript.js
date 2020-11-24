@@ -35,12 +35,12 @@ let mesLiens = [
 
   {
     name: "A propos",
-    lien: "",
+    lien: "#",
   },
 
   {
     name: "Projects",
-    lien: "",
+    lien: "#portfolio",
   },
 
   {
@@ -316,7 +316,7 @@ function switchOffY() {
 let equipe = [
   {
     nom: "Matthieu Simonin",
-    job: "Directeur d'agence",
+    job: "Dirigeant et conseiller en communication",
     image: "./ressources/images/boss.jpg",
   },
 
@@ -377,12 +377,12 @@ for (i in equipe) {
 
   if (window.matchMedia("(max-width: 700px)").matches) {
     imagePerso.addEventListener("click", (e) => {
-      e.target.style.transform = "translate(0px,-60px)";
+      e.target.style.transform = "translate(0px,-70px)";
       e.target.style.transition = "2s ease-in-out";
     });
   } else {
     imagePerso.addEventListener("mouseover", (e) => {
-      e.target.style.transform = "translate(-60px,-60px)";
+      e.target.style.transform = "translate(-70px,-70px)";
       e.target.style.transition = "2s ease-in-out";
       e.target.style.cursor = "pointer";
     });
@@ -650,7 +650,7 @@ for (i in mesPrints) {
 
 let mesIdentite = [
   {
-    image: "./ressources/images/ImagesPortfolio/fleures.jpg",
+    image: "./ressources/images/imageCarte/Psychocats.jpg",
   },
   {
     image: "./ressources/images/ImagesPortfolio/keller.jpg",
@@ -723,11 +723,7 @@ for (i in mesEnseignes) {
     monEnseigne.style.boxShadow = "none";
   });
 
-  if (monEnseigne.style.transform > "scale(1)") {
-    monEnseigne.style.filter = "blur(2px)";
-  } else {
-    monEnseigne.style.filter = "blur(0px)";
-  }
+  
 
   document.getElementById("enseigne").appendChild(monEnseigne);
 }
