@@ -48,7 +48,7 @@ let mesLiens = [{
   },
 
   {
-    name: "l'équipe",
+    name: "L'équipe",
     lien: "#Equipe",
   },
 
@@ -677,10 +677,10 @@ for (i in mesIdentite) {
 }
 
 let mesEnseignes = [{
-    image: "./ressources/images/ImageEnseigne/apresVous.jpg",
+    image: "./ressources/images/imageEnseigne/apresVous.jpg",
   },
   {
-    image: "./ressources/images/ImageEnseigne/tulipe.jpg",
+    image: "./ressources/images/imageEnseigne/tulipe.jpg",
   },
 ];
 
