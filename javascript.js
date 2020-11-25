@@ -75,7 +75,7 @@ for (i in mesLiens) {
 
 /*************sect1 **************/
 
-window.addEventListener("scroll", (event) => {
+window.addEventListener("load", (event) => {
   separation();
   apparition();
 });
@@ -604,7 +604,7 @@ let mesPrints = [{
     image: "./ressources/images/imageCarte/resto.jpg",
   },
   {
-    image: "./ressources/images/imageCarte/resto.jpg",
+    image: "./ressources/images/imageCarte/immobilier.jpg",
   },
 ];
 
