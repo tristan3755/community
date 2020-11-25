@@ -614,7 +614,7 @@ let mesPrints = [
     image: "./ressources/images/imageCarte/resto.jpg",
   },
   {
-    image: "./ressources/images/ImagesPortfolio/keller.jpg",
+    image: "./ressources/images/imageCarte/resto.jpg",
   },
 ];
 
@@ -653,7 +653,7 @@ let mesIdentite = [
     image: "./ressources/images/imageCarte/Psychocats.jpg",
   },
   {
-    image: "./ressources/images/ImagesPortfolio/keller.jpg",
+    image: "./ressources/images/ImageCarte/valoggia.jpg",
   },
 ];
 

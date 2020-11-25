@@ -18,7 +18,7 @@ body {
   }
 
   to {
-    opacity: 100;
+    opacity: 1;
   }
 }
 
@@ -308,7 +308,7 @@ header {
   object-fit: cover;
 }
 
-/******************sect3******************/
+/****************************************sect3*************************************************/
 
 .sect3 {
   display: flex;
@@ -435,19 +435,17 @@ display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
-width: 60%;
+width: 50%;
 min-height: 65vh;
-
 margin-bottom: 50px;
 }
 
 #aProposText p{
-
-  font-family: "Raleway", sans-serif;
-  letter-spacing: normal;
-  text-align: justify;
-  letter-spacing: 1px;
-
+font-family: "Raleway", sans-serif;
+letter-spacing: normal;
+text-align: center;
+letter-spacing: 3px;
+font-size: 90%;
 }
 
 
