@@ -7,7 +7,6 @@
 
 body {
   margin: 0;
-  
 }
 
 /**************** header******************/
@@ -99,18 +98,16 @@ header {
   width: 100%;
 }
 
-.reseauMenu{
+.reseauMenu {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
   width: 250px;
   height: 100px;
-  
-  
 }
 
-.reseauMenu a>*{
+.reseauMenu a > * {
   font-size: 30px;
   animation: lien 5s;
 }
@@ -359,7 +356,6 @@ header {
   color: #e9692c;
   margin: 50px;
   font-weight: bold;
-  
 }
 .imageDiv p {
   margin: 5px;
@@ -370,7 +366,6 @@ header {
   width: 100%;
   height: 100%;
   transition: ease-in-out 2s;
-  
 }
 
 .imgBox img {
@@ -383,7 +378,9 @@ header {
 }
 
 /****************sect3*******************/
-#categorie,#portfolio,#aPropos {
+#categorie,
+#portfolio,
+#aPropos {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -399,7 +396,12 @@ header {
   margin-top: 50px;
   text-align: center;
 }
-#services,#creation,#Ecommerce,#prints,#logoVisuelle,#enseigne{
+#services,
+#creation,
+#Ecommerce,
+#prints,
+#logoVisuelle,
+#enseigne {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -407,17 +409,18 @@ header {
   align-items: center;
   min-height: 80vh;
   width: 100%;
-  border-top:1px solid #e9692c;
-  border-bottom:1px solid #e9692c;
+  border-top: 1px solid #e9692c;
+  border-bottom: 1px solid #e9692c;
 }
 
 /**********************************a propos *********************/
 
-#aPropos{
+#aPropos {
   background-color: black;
 }
 
-#aPropos,h1{
+#aPropos,
+h1 {
   color: white;
   font-family: "bien";
   font-size: 25px;
@@ -425,44 +428,37 @@ header {
   text-align: center;
 }
 
-.qui{
+.qui {
   margin-bottom: 50px;
   margin-top: 50px;
 }
 
-#aProposText{
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-width: 50%;
-min-height: 65vh;
-margin-bottom: 50px;
+#aProposText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  min-height: 65vh;
+  margin-bottom: 50px;
 }
 
-#aProposText p{
-font-family: "Raleway", sans-serif;
-letter-spacing: normal;
-text-align: center;
-letter-spacing: 3px;
-font-size: 90%;
+#aProposText p {
+  font-family: "Raleway", sans-serif;
+  letter-spacing: normal;
+  text-align: center;
+  letter-spacing: 3px;
+  font-size: 90%;
 }
-  
-@media (max-width:400px){
 
-  #aProposText{
+@media (max-width: 400px) {
+  #aProposText {
     width: 80%;
-   
-    }
-    
-
-  #aProposText p{
+  }
+  #aProposText p {
     font-size: 60%;
-    }
-
+  }
 }
-
-
 
 /**************************************categories***********************/
 
@@ -532,13 +528,13 @@ font-size: 90%;
   border-radius: 50%;
   z-index: 5;
   box-shadow: 0 0 10px #e9692c, 0 0 20px #e9692c, 0 0 30px #e9692c,
-  0 0 40px #e9692c, 0 0 50px #e9692c, 0 0 60px #e9692c, 0 0 70px #e9692c,
-  0 0 80px #e9692c, 0 0 90px #e9692c, 0 0 100px #e9692c;
+    0 0 40px #e9692c, 0 0 50px #e9692c, 0 0 60px #e9692c, 0 0 70px #e9692c,
+    0 0 80px #e9692c, 0 0 90px #e9692c, 0 0 100px #e9692c;
 }
 
 /*************************************portfolio*********************************/
 
-#portfolio h1{
+#portfolio h1 {
   color: black;
   font-family: "bien";
   font-size: 25px;
@@ -550,19 +546,18 @@ font-size: 90%;
 
 /**************************************Abientot*************************************************/
 
-#aBientot{
+#aBientot {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
   width: 100%;
-  background-color:black;
+  background-color: black;
   cursor: none;
-  
 }
 
-.text{
+.text {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -571,16 +566,15 @@ font-size: 90%;
   width: 100%;
 }
 
-.text h2{
+.text h2 {
   text-align: center;
   font-size: 250%;
-  font-family:'bien' ;
+  font-family: "bien";
   z-index: 1;
-  padding:100px ;
+  padding: 100px;
 }
 
-
-.lumiere{
+.lumiere {
   position: absolute;
   background-color: white;
   height: 100%;
@@ -592,42 +586,35 @@ font-size: 90%;
   filter: blur(20px);
 }
 
-.text h2:hover ~ .lumiere{
-clip-path: circle(120px at var(--x) var(--y));
+.text h2:hover ~ .lumiere {
+  clip-path: circle(120px at var(--x) var(--y));
 }
 
-#waldo:hover{
-opacity: 1;
-
+#waldo:hover {
+  opacity: 1;
 }
 
-#waldo{
+#waldo {
   position: absolute;
-  right: 0; 
+  right: 0;
   transition: 2s ease-in-out;
   opacity: 0;
 }
 
-
-
-@media(max-width:400px){
-  .text h2{
-    padding:20px;
+@media (max-width: 400px) {
+  .text h2 {
+    padding: 20px;
   }
 }
 
+@media (max-width: 810px) {
+  .lumiere {
+    z-index: -10;
+  }
 
-@media(max-width:810px){
-
-  
-  .lumiere{
-   z-index: -10;
-}
-  
-  #waldo{
+  #waldo {
     opacity: 1;
   }
-
 }
 
 /**************************************Abientot*************************************************/
@@ -644,25 +631,19 @@ footer {
   background-color: black;
 }
 
-
-
-#retourHaut{
- 
- font-size: 50px;
- color:white; 
- background-color: black;
- border-radius: 50%;
- margin-top:-50px;
- border:2px solid black ;
- 
+#retourHaut {
+  font-size: 50px;
+  color: white;
+  background-color: black;
+  border-radius: 50%;
+  margin-top: -50px;
+  border: 2px solid black;
 }
 
-#retourHaut:hover{
-
+#retourHaut:hover {
   cursor: pointer;
   background-color: #e9692c;
-  border:2px solid #e9692c;
-
+  border: 2px solid #e9692c;
 }
 
 .borderFooter2 {
@@ -701,12 +682,10 @@ footer {
   border-left: 1px whitesmoke solid;
 }
 
-@media(max-width:376px){
-
-.borderLeft{
-  display: none;
-}
-
+@media (max-width: 376px) {
+  .borderLeft {
+    display: none;
+  }
 }
 
 .borderFin {

@@ -27,8 +27,7 @@ function menuOff() {
   menu.style.display = "none";
 }
 
-let mesLiens = [
-  {
+let mesLiens = [{
     name: "Services",
     lien: "#categorie",
   },
@@ -313,8 +312,7 @@ function switchOffY() {
 
 /*************************** sect3 ******************************/
 
-let equipe = [
-  {
+let equipe = [{
     nom: "Matthieu Simonin",
     job: "Dirigeant et conseiller en communication",
     image: "./ressources/images/boss.jpg",
@@ -353,7 +351,7 @@ for (i in equipe) {
   imgBox.classList.add("imgBox");
 
   let imagePerso = document.createElement("img");
-  
+
   imagePerso.src = equipe[i].image;
 
   imgBox.appendChild(imagePerso);
@@ -398,19 +396,16 @@ for (i in equipe) {
 
 /*************************** catégorie ******************************/
 
-let mesServices = [
-  {
+let mesServices = [{
     name: "Graphisme",
     image: "./ressources/images/7.png",
-    description:
-      "Identité visuelle Logo Cartes de visite Flyers/ Brochures/ Affiches...",
+    description: "Identité visuelle Logo Cartes de visite Flyers/ Brochures/ Affiches...",
   },
 
   {
     name: "Web",
     image: "./ressources/images/6.png",
-    description:
-      "Création site internet Vitrine & E-Commerce Community management  ",
+    description: "Création site internet Vitrine & E-Commerce Community management  ",
   },
 
   {
@@ -434,15 +429,13 @@ let mesServices = [
   {
     name: "Publicité",
     image: "./ressources/images/3.png",
-    description:
-      "Objets publicitaires Textiles Vitrophanie Covering voiture Affiches Bache",
+    description: "Objets publicitaires Textiles Vitrophanie Covering voiture Affiches Bache",
   },
 
   {
     name: "Formation",
     image: "./ressources/images/4.png",
-    description:
-      "Objets publicitaires Textiles Vitrophanie Covering voiture Affiches Bache",
+    description: "Objets publicitaires Textiles Vitrophanie Covering voiture Affiches Bache",
   },
 ];
 
@@ -511,8 +504,7 @@ for (i in mesServices) {
 
 /****************************** Portfolio ***************************/
 
-let mesSitesVitrines = [
-  {
+let mesSitesVitrines = [{
     image: "./ressources/images/ImagesPortfolio/cookoon.jpg",
     lien: "https://lecookoon-nancy.fr/",
   },
@@ -560,8 +552,7 @@ function click(liens) {
   };
 }
 
-let mesSitesCommerce = [
-  {
+let mesSitesCommerce = [{
     image: "./ressources/images/ImagesPortfolio/fleures.jpg",
     lien: "https://latelier81-athome.com/",
   },
@@ -609,8 +600,7 @@ function click2(liens) {
   };
 }
 
-let mesPrints = [
-  {
+let mesPrints = [{
     image: "./ressources/images/imageCarte/resto.jpg",
   },
   {
@@ -648,8 +638,7 @@ for (i in mesPrints) {
   document.getElementById("prints").appendChild(monPrint);
 }
 
-let mesIdentite = [
-  {
+let mesIdentite = [{
     image: "./ressources/images/imageCarte/Psychocats.jpg",
   },
   {
@@ -687,8 +676,7 @@ for (i in mesIdentite) {
   document.getElementById("logoVisuelle").appendChild(monLogo);
 }
 
-let mesEnseignes = [
-  {
+let mesEnseignes = [{
     image: "./ressources/images/ImageEnseigne/apresVous.jpg",
   },
   {
@@ -723,7 +711,7 @@ for (i in mesEnseignes) {
     monEnseigne.style.boxShadow = "none";
   });
 
-  
+
 
   document.getElementById("enseigne").appendChild(monEnseigne);
 }
@@ -732,30 +720,29 @@ for (i in mesEnseignes) {
 
 
 
- if (window.matchMedia("(min-width: 810px)").matches){
- document.documentElement.addEventListener('mousemove',(event)=>{
-  document.documentElement.style.setProperty('--x',event.clientX+'px')
-  document.documentElement.style.setProperty('--y',event.clientY+'px')
- })
-}else{
-  window.addEventListener('load',(event)=>{
+if (window.matchMedia("(min-width: 810px)").matches) {
+  document.documentElement.addEventListener('mousemove', (event) => {
+    document.documentElement.style.setProperty('--x', event.clientX + 'px')
+    document.documentElement.style.setProperty('--y', event.clientY + 'px')
+  })
+} else {
+  window.addEventListener('load', (event) => {
     lumiere1()
     lumiere2()
   })
 
 
-  function lumiere1(){
-    let lampe1=document.querySelector('.alors')
-    lampe1.style.backgroundColor="white"
-    lampe1.style.borderRadius="40%"
+  function lumiere1() {
+    let lampe1 = document.querySelector('.alors')
+    lampe1.style.backgroundColor = "white"
+    lampe1.style.borderRadius = "40%"
   }
 
-  function lumiere2(){
-    let lampe2=document.querySelector('.bientot')
-    lampe2.style.backgroundColor="white"
-    lampe2.style.borderRadius="40%"
-    lampe2.style.width="60%"
+  function lumiere2() {
+    let lampe2 = document.querySelector('.bientot')
+    lampe2.style.backgroundColor = "white"
+    lampe2.style.borderRadius = "40%"
+    lampe2.style.width = "60%"
   }
 
 }
-
