@@ -642,7 +642,7 @@ let mesIdentite = [{
     image: "./ressources/images/imageCarte/Psychocats.jpg",
   },
   {
-    image: "./ressources/images/ImageCarte/valoggia.jpg",
+    image: "./ressources/images/imageCarte/valoggia.jpg",
   },
 ];
 
