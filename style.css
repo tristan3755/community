@@ -383,19 +383,13 @@ header {
 }
 
 /****************sect3*******************/
-
-
-
-#categorie,#portfolio {
+#categorie,#portfolio,#aPropos {
   display: flex;
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
   width: 100%;
 }
-
-
-
 #categorie h1 {
   color: black;
   font-family: "bien";
@@ -405,7 +399,6 @@ header {
   margin-top: 50px;
   text-align: center;
 }
-
 #services,#creation,#Ecommerce,#prints,#logoVisuelle,#enseigne{
   display: flex;
   flex-direction: row;
@@ -417,6 +410,49 @@ header {
   border-top:1px solid #e9692c;
   border-bottom:1px solid #e9692c;
 }
+
+/**********************************a propos *********************/
+
+#aPropos{
+  background-color: black;
+}
+
+#aPropos,h1{
+  color: white;
+  font-family: "bien";
+  font-size: 25px;
+  letter-spacing: 10px;
+  text-align: center;
+}
+
+.qui{
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+#aProposText{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+width: 60%;
+min-height: 65vh;
+
+margin-bottom: 50px;
+}
+
+#aProposText p{
+
+  font-family: "Raleway", sans-serif;
+  letter-spacing: normal;
+  text-align: justify;
+  letter-spacing: 1px;
+
+}
+
+
+
+
 /**************************************categories***********************/
 
 .imageService:hover {
@@ -485,8 +521,8 @@ header {
   border-radius: 50%;
   z-index: 5;
   box-shadow: 0 0 10px #e9692c, 0 0 20px #e9692c, 0 0 30px #e9692c,
-    0 0 40px #e9692c, 0 0 50px #e9692c, 0 0 60px #e9692c, 0 0 70px #e9692c,
-    0 0 80px #e9692c, 0 0 90px #e9692c, 0 0 100px #e9692c;
+  0 0 40px #e9692c, 0 0 50px #e9692c, 0 0 60px #e9692c, 0 0 70px #e9692c,
+  0 0 80px #e9692c, 0 0 90px #e9692c, 0 0 100px #e9692c;
 }
 
 /*************************************portfolio*********************************/
