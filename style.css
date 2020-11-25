@@ -447,7 +447,20 @@ text-align: center;
 letter-spacing: 3px;
 font-size: 90%;
 }
+  
+@media (max-width:400px){
 
+  #aProposText{
+    width: 80%;
+   
+    }
+    
+
+  #aProposText p{
+    font-size: 60%;
+    }
+
+}
 
 
 
