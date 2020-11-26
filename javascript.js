@@ -365,6 +365,7 @@ for (i in equipe) {
 
   let jobText = document.createElement("p");
   jobText.innerHTML = equipe[i].nom;
+  jobText.style.fontWeight="bold"
 
   job.appendChild(jobText);
 
