@@ -34,7 +34,7 @@ let mesLiens = [{
 
   {
     name: "A propos",
-    lien: "#",
+    lien: "#aPropos",
   },
 
   {
