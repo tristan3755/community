@@ -318,6 +318,13 @@ let equipe = [{
     image: "./ressources/images/boss.jpg",
   },
 
+
+  {
+    nom: "Alexandre Louis",
+    job: "Dirigeant associé",
+    image: "./ressources/images/alexandre.jpg",
+  },
+
   {
     nom: "Abdelah Boumaza",
     job: "Formateur hygiène sécurité",
@@ -340,6 +347,12 @@ let equipe = [{
     nom: "Matthieu Zacharie",
     job: " Formateur Anglais",
     image: "./ressources/images/math.jpg",
+  },
+
+  {
+    nom: "Solenn Dubillard",
+    job: " WebDesigneuse",
+    image: "./ressources/images/solenn.jpg",
   },
 ];
 
