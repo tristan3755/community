@@ -351,6 +351,7 @@ for (i in equipe) {
   imgBox.classList.add("imgBox");
 
   let imagePerso = document.createElement("img");
+  imagePerso.alt="Membre de l'agence de communication Community Nancy";
 
   imagePerso.src = equipe[i].image;
 
@@ -484,6 +485,7 @@ for (i in mesServices) {
   monBloc.appendChild(monCercle);
 
   let monImage = document.createElement("img");
+  monImage.alt="logo de la catégorie";
   monImage.classList.add("imageService");
   monImage.src = mesServices[i].image;
   monImage.style.height = "160px";
@@ -516,6 +518,7 @@ let mesSitesVitrines = [{
 
 for (i in mesSitesVitrines) {
   let monSite = document.createElement("img");
+  monSite.alt="image de site vitrine rélisée par Community";
   monSite.classList.add("site");
   monSite.style.height = "auto";
   monSite.style.width = "600px";
@@ -564,6 +567,7 @@ let mesSitesCommerce = [{
 
 for (i in mesSitesCommerce) {
   let monSite = document.createElement("img");
+  monSite.alt="image de site e-commerce rélisée par Community";
   monSite.classList.add("site");
   monSite.style.height = "auto";
   monSite.style.width = "600px";
@@ -610,6 +614,7 @@ let mesPrints = [{
 
 for (i in mesPrints) {
   let monPrint = document.createElement("img");
+  monPrint.alt="image de print rélisé par Community";
   monPrint.classList.add("site");
   monPrint.style.height = "auto";
   monPrint.style.width = "600px";
@@ -648,6 +653,7 @@ let mesIdentite = [{
 
 for (i in mesIdentite) {
   let monLogo = document.createElement("img");
+  monLogo.alt="image d'identité visuelle rélisée par Community";
   monLogo.classList.add("site");
   monLogo.style.height = "auto";
   monLogo.style.width = "600px";
@@ -686,6 +692,7 @@ let mesEnseignes = [{
 
 for (i in mesEnseignes) {
   let monEnseigne = document.createElement("img");
+  monEnseigne.alt="image d'une enseigne rélisée par Community";
   monEnseigne.classList.add("site");
   monEnseigne.style.height = "auto";
   monEnseigne.style.width = "600px";
