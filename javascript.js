@@ -741,7 +741,7 @@ for (i in mesEnseignes) {
 
 
 
-if (window.matchMedia("(min-width: 810px)").matches) {
+if (window.matchMedia("(min-width: 1050px)").matches) {
   document.documentElement.addEventListener('mousemove', (event) => {
     document.documentElement.style.setProperty('--x', event.clientX + 'px')
     document.documentElement.style.setProperty('--y', event.clientY + 'px')
@@ -763,7 +763,8 @@ if (window.matchMedia("(min-width: 810px)").matches) {
     let lampe2 = document.querySelector('.bientot')
     lampe2.style.backgroundColor = "white"
     lampe2.style.borderRadius = "40%"
-    lampe2.style.width = "60%"
+    lampe2.style.width = "300px"
+    lampe2.style.maxWidht="100%"
   }
 
 }

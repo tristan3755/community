@@ -572,6 +572,7 @@ h1 {
   font-family: "bien";
   z-index: 1;
   padding: 100px;
+  
 }
 
 .lumiere {
@@ -601,13 +602,13 @@ h1 {
   opacity: 0;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 1050px) {
   .text h2 {
     padding: 20px;
   }
 }
 
-@media (max-width: 810px) {
+@media (max-width: 1050px) {
   .lumiere {
     z-index: -10;
   }
