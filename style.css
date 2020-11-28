@@ -581,14 +581,15 @@ h1 {
   height: 100%;
   width: 100%;
   pointer-events: none;
-  transition: 0.1s;
   clip-path: circle(50px at var(--x) var(--y));
   filter: sepia(40%);
   filter: blur(20px);
+  
 }
 
 .text h2:hover ~ .lumiere {
   clip-path: circle(120px at var(--x) var(--y));
+  pointer-events: none;
 }
 
 #waldo:hover {
