@@ -38,7 +38,7 @@ let mesLiens = [{
   },
 
   {
-    name: "Projects",
+    name: "Portfolio",
     lien: "#portfolio",
   },
 
@@ -54,7 +54,7 @@ let mesLiens = [{
 
   {
     name: "Formation",
-    lien: "",
+    lien: "./pageFormation.html",
   },
 ];
 
