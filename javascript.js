@@ -450,7 +450,7 @@ let mesServices = [{
   {
     name: "Formation",
     image: "./ressources/images/4.png",
-    description: "En cours de création",
+    description: "En cours",
   },
 ];
 
