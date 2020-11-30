@@ -327,12 +327,12 @@ let equipe = [{
 
   {
     nom: "Abdelah Boumaza",
-    job: "Formateur hygiène sécurité",
+    job: "Formateur hygiène et sécurité",
     image: "./ressources/images/abdela.jpg",
   },
 
   {
-    nom: "Céllia Mouzard",
+    nom: "Célia Mouzard",
     job: "Chargée de communication",
     image: "./ressources/images/cellia.jpg",
   },
@@ -450,7 +450,7 @@ let mesServices = [{
   {
     name: "Formation",
     image: "./ressources/images/4.png",
-    description: "Objets publicitaires Textiles Vitrophanie Covering voiture Affiches Bache",
+    description: "En cours de création",
   },
 ];
 
