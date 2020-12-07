@@ -417,30 +417,35 @@ let equipe2 = [
   nom: "Abdelah Boumaza",
   job: "Formateur hygiène et sécurité",
   image: "./ressources/images/abdela.jpg",
+  description:"",
 },
 
 {
   nom: "Célia Mouzard",
   job: "Chargée de communication",
   image: "./ressources/images/cellia.jpg",
+  description:"",
 },
 
 {
   nom: "Christophers Pestelard ",
   job: " Commercial",
   image: "./ressources/images/christophers.jpg",
+  description:"",
 },
 
 {
   nom: "Matthieu Zacharie",
   job: " Formateur Anglais",
   image: "./ressources/images/math.jpg",
+  description:"",
 },
 
 {
   nom: "Solenn Dubillard",
   job: " WebDesigneuse",
   image: "./ressources/images/solenn.jpg",
+  description:"",
 },
 
 ];
@@ -474,7 +479,7 @@ for (i in equipe2) {
 
   let jobText2 = document.createElement("p");
   jobText2.innerHTML = equipe2[i].job;
-  jobText2.style.fontFamily = "orange";
+  jobText2.style.fontFamily = "aard";
 
   job.appendChild(jobText2);
 

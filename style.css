@@ -252,8 +252,8 @@ header {
 }
 
 @font-face {
-  font-family: "orange";
-  src: url("./ressources/font/orange.otf");
+  font-family: "aard";
+  src: url("./ressources/font/AARDC___.TTF");
 }
 
 @media (max-width: 650px) {
@@ -357,7 +357,7 @@ header {
   max-width: 80%;
   background-color: white;
   text-align: center;
-  font-family: "bien";
+  font-family: "roll";
   color: #e9692c;
   margin: 50px;
   
@@ -373,9 +373,10 @@ header {
   max-width: 80%;
   background-color: white;
   text-align: center;
-  font-family: "orange";
+  font-family: "aard";
   color: #e9692c;
   margin: 50px;
+  
 }
 
 .imageDiv p {
