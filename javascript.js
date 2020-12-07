@@ -448,7 +448,7 @@ let equipe2 = [
 
 for (i in equipe2) {
   let imageDiv = document.createElement("div");
-  imageDiv.classList.add("imageDiv");
+  imageDiv.classList.add("imageDiv1");
 
   let imgBox = document.createElement("div");
   imgBox.classList.add("imgBox");
@@ -468,26 +468,27 @@ for (i in equipe2) {
 
   let jobText = document.createElement("p");
   jobText.innerHTML = equipe2[i].nom;
-  jobText.style.fontWeight="bold"
+  
 
   job.appendChild(jobText);
 
   let jobText2 = document.createElement("p");
   jobText2.innerHTML = equipe2[i].job;
-  jobText2.style.fontFamily = "raleway";
+  jobText2.style.fontFamily = "orange";
 
   job.appendChild(jobText2);
 
   if (window.matchMedia("(max-width: 700px)").matches) {
     imagePerso.addEventListener("click", (e) => {
       e.target.style.opacity = "0";
-      
+      e.target.style.filter = "blur(50px)";
       e.target.style.transition = "2s ease-in-out";
     });
 
-    imagePerso.addEventListener("scroll", (e) => {
-      e.target.style.opacity = "1";
-      e.target.style.transition = "2s ease-in-out";
+    window.addEventListener("scroll", (e) => {
+      imagePerso.style.opacity = "1";
+      imagePerso.style.filter = "blur(0px)";
+     imagePerso.style.transition = "2s ease-in-out";
     });
 
   } else {
