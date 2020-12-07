@@ -324,7 +324,7 @@ let equipe = [{
     job: "Dirigeant associé",
     image: "./ressources/images/alexandre.jpg",
   },
-
+/*
   {
     nom: "Abdelah Boumaza",
     job: "Formateur hygiène et sécurité",
@@ -353,7 +353,7 @@ let equipe = [{
     nom: "Solenn Dubillard",
     job: " WebDesigneuse",
     image: "./ressources/images/solenn.jpg",
-  },
+  },*/
 ];
 
 for (i in equipe) {
@@ -407,6 +407,105 @@ for (i in equipe) {
   }
 
   document.getElementById("gallery").appendChild(imageDiv);
+}
+
+/*****************************prestataires ***********************************/
+let equipe2 = [
+  
+  {
+ 
+  nom: "Abdelah Boumaza",
+  job: "Formateur hygiène et sécurité",
+  image: "./ressources/images/abdela.jpg",
+},
+
+{
+  nom: "Célia Mouzard",
+  job: "Chargée de communication",
+  image: "./ressources/images/cellia.jpg",
+},
+
+{
+  nom: "Christophers Pestelard ",
+  job: " Commercial",
+  image: "./ressources/images/christophers.jpg",
+},
+
+{
+  nom: "Matthieu Zacharie",
+  job: " Formateur Anglais",
+  image: "./ressources/images/math.jpg",
+},
+
+{
+  nom: "Solenn Dubillard",
+  job: " WebDesigneuse",
+  image: "./ressources/images/solenn.jpg",
+},
+
+];
+
+
+for (i in equipe2) {
+  let imageDiv = document.createElement("div");
+  imageDiv.classList.add("imageDiv");
+
+  let imgBox = document.createElement("div");
+  imgBox.classList.add("imgBox");
+
+  let imagePerso = document.createElement("img");
+  imagePerso.alt="Membre de l'agence de communication Community Nancy";
+
+  imagePerso.src = equipe2[i].image;
+
+  imgBox.appendChild(imagePerso);
+  imageDiv.appendChild(imgBox);
+
+  let job = document.createElement("div");
+  job.classList.add("job");
+
+  imageDiv.appendChild(job);
+
+  let jobText = document.createElement("p");
+  jobText.innerHTML = equipe2[i].nom;
+  jobText.style.fontWeight="bold"
+
+  job.appendChild(jobText);
+
+  let jobText2 = document.createElement("p");
+  jobText2.innerHTML = equipe2[i].job;
+  jobText2.style.fontFamily = "raleway";
+
+  job.appendChild(jobText2);
+
+  if (window.matchMedia("(max-width: 700px)").matches) {
+    imagePerso.addEventListener("click", (e) => {
+      e.target.style.opacity = "0";
+      
+      e.target.style.transition = "2s ease-in-out";
+    });
+
+    imagePerso.addEventListener("scroll", (e) => {
+      e.target.style.opacity = "1";
+      e.target.style.transition = "2s ease-in-out";
+    });
+
+  } else {
+    imagePerso.addEventListener("mouseover", (e) => {
+      e.target.style.opacity = "0";
+      e.target.style.filter = "blur(50px)";
+      e.target.style.transition = "2s ease-in-out";
+      e.target.style.cursor = "pointer";
+    });
+
+    imagePerso.addEventListener("mouseout", (e) => {
+      e.target.style.opacity = "1";
+      e.target.style.transition = "2s ease-in-out";
+      e.target.style.filter = "blur(0px)";
+    });
+  }
+
+  document.getElementById("gallery1").appendChild(imageDiv);
 }
 
 /*************************** catégorie ******************************/
