@@ -318,42 +318,19 @@ let equipe = [{
     image: "./ressources/images/boss.jpg",
   },
 
+  {
+    nom: "Célia Mouzard",
+    job: "Chargée de communication",
+    image: "./ressources/images/cellia.jpg",
+    
+  },
 
   {
     nom: "Alexandre Louis",
     job: "Dirigeant associé",
     image: "./ressources/images/alexandre.jpg",
   },
-/*
-  {
-    nom: "Abdelah Boumaza",
-    job: "Formateur hygiène et sécurité",
-    image: "./ressources/images/abdela.jpg",
-  },
 
-  {
-    nom: "Célia Mouzard",
-    job: "Chargée de communication",
-    image: "./ressources/images/cellia.jpg",
-  },
-
-  {
-    nom: "Christophers Pestelard ",
-    job: " Commercial",
-    image: "./ressources/images/christophers.jpg",
-  },
-
-  {
-    nom: "Matthieu Zacharie",
-    job: " Formateur Anglais",
-    image: "./ressources/images/math.jpg",
-  },
-
-  {
-    nom: "Solenn Dubillard",
-    job: " WebDesigneuse",
-    image: "./ressources/images/solenn.jpg",
-  },*/
 ];
 
 for (i in equipe) {
@@ -420,16 +397,11 @@ let equipe2 = [
   description:"",
 },
 
-{
-  nom: "Célia Mouzard",
-  job: "Chargée de communication",
-  image: "./ressources/images/cellia.jpg",
-  description:"",
-},
+
 
 {
   nom: "Christophers Pestelard ",
-  job: " Commercial",
+  job: " Commercial et photographe",
   image: "./ressources/images/christophers.jpg",
   description:"",
 },
